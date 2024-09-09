@@ -5,7 +5,13 @@
   },
   {
     "listing": "/paper.html",
-    "items": []
+    "items": [
+      "/index.html",
+      "/gallery.html",
+      "/about.html",
+      "/statistics.html",
+      "/dataviz.html"
+    ]
   },
   {
     "listing": "/gallery.html",

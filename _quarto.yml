@@ -34,7 +34,7 @@ website:
 format:
   html:
     theme: materia
-    css: styles.css
+    css: mystyles.scss
     toc: true
     mainfont: Roboto
     fontsize: 18px

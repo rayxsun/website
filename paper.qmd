@@ -1,13 +1,6 @@
 ---
 title: "Paper"
-listing:
-  contents: paper
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-  image-height: 10em
-page-layout: full
-title-block-banner: true
 ---
+<div class="paper">
+- **[Gender and the Great Resignation, *Phenomenal World*](https://www.phenomenalworld.org/analysis/gender-and-the-great-resignation/)**  
+</div>
