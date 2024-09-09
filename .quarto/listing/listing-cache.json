@@ -1,0 +1,16 @@
+{
+  "listingMap": {
+    "paper.qmd": [
+      "paper"
+    ],
+    "gallery.qmd": [
+      "gallery"
+    ],
+    "statistics.qmd": [
+      "statistics"
+    ],
+    "dataviz.qmd": [
+      "dataviz"
+    ]
+  }
+}

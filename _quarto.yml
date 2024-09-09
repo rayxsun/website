@@ -1,0 +1,49 @@
+project:
+  type: website
+
+website:
+  title: "Raychel Sun"
+  favicon: "sun.jpg"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: statistics.qmd
+        text: Statistics
+      - href: dataviz.qmd
+        text: Data Visualization     
+      - href: paper.qmd
+        text: Paper  
+      - href: gallery.qmd
+        text: Gallery
+
+    right:
+      - text: LinkedIn
+        url: "https://www.linkedin.com/in/raychelsun/"
+        icon: linkedin
+      - text: GitHub
+        icon: github
+        url: "https://github.com/rayxsun"
+      - text: Email
+        href: mailto:sunxiaoformal@gmail.com
+        icon: envelope
+      - text: Resume
+        href: Sun_CV_ aug29.pdf
+        icon: file-earmark-person
+
+format:
+  html:
+    theme: materia
+    css: styles.css
+    toc: true
+    mainfont: Roboto
+    fontsize: 18px
+    linestretch: 1.7
+    page-layout: article
+    citations-hover: true
+    code-link: true
+    code-fold: show
+    code-tools: false
+
+
+

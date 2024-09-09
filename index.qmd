@@ -1,0 +1,20 @@
+---
+title: "Raychel Sun"
+image: sun.jpg
+about:
+  template: jolla
+  image-shape: round
+  image-width: 15em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/raychelsun/
+      icon: linkedin
+    - text: GitHub
+      icon: github
+      href: https://github.com/rayxsun
+    - text: Contact me
+      href: mailto:sunxiaoformal@gmail.com
+      icon: envelope
+---
+
+I am a PhD candidate in Political Science at the University of Florida, specializing in computational social science research and international political economy. I love finding patterns in complex data and turning them into clear, actionable insights.
