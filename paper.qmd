@@ -1,6 +1,21 @@
 ---
 title: "Paper"
 ---
+---
+title: "Paper"
+---
+
 <div class="paper">
-- **[Gender and the Great Resignation, *Phenomenal World*](https://www.phenomenalworld.org/analysis/gender-and-the-great-resignation/)**  
+
+- **[Gender and the Great Resignation](https://www.phenomenalworld.org/analysis/gender-and-the-great-resignation/)**, *Phenomenal World*, January 28, 2023
+
+- **Unseen Inequality: The Gendered Impacts of Welfare Policies**, *The American Political Science Association's 120th Annual Conference*, September 09, 2024
+
+- **Exploring the Determinants of China’s Official Financing in Southeast Asia**, *The International Studies Association 2024 Annual Convention*, April 03, 2024
+
+- **Hidden Burdens: How Family Responsibilities and Job Insecurity Shape Women's Trade Protectionism**, *The British International Studies Association 2023 Conference*, June 20, 2023
+
+- **Assessing the Impacts of the COVID-19 Recession and the Great Recession in the US**, *79th Annual Midwest Political Science Association Conference*, April 08, 2022
+
 </div>
+

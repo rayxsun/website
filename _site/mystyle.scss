@@ -28,6 +28,18 @@ body {
     font-size: 20px;  // Adjust font size for published work section
   }
 
+  // gallery
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
 // Colors
 $cream: #FDFBF7;
 $gray: #64605f;
