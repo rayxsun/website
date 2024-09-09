@@ -1,0 +1,51 @@
+/*-- scss:defaults --*/
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// Adjust the global font size for the body text
+body {
+    font-size: 18px;  // Adjust this to any size you prefer
+  }
+  
+  // Customize the font size for headings
+  h1 {
+    font-size: 30px;  // Adjust the size of main headings
+  }
+  
+  h2 {
+    font-size: 26px;  // Adjust the size of subheadings
+  }
+  
+  // Font size for paragraphs or other body elements
+  p {
+    font-size: 16px;  // Adjust paragraph font size
+  }
+  
+  // Specific class for the paper section
+  .paper {
+    font-size: 20px;  // Adjust font size for published work section
+  }
+
+// Colors
+$cream: #FDFBF7;
+$gray: #64605f;
+$purple: #AE8BD1;
+$dark-blue: #0a3351;
+$light-blue: #2f70a1;
+
+// Base document colors
+$navbar-bg: $dark-blue; // navbar
+$navbar-fg: $cream; // navbar foreground elements
+$navbar-hl: $light-blue; // highlight color when hovering over navbar links
+$body-color: $gray; // page text 
+$footer-bg: $dark-blue; // footer 
+$link-color: $light-blue; // hyperlinks 
+
+// Inline code
+$code-bg: $cream; // inline code background color
+$code-color: $purple; // inline code text color
+
+// Code blocks
+$code-block-bg: $cream; // code block background color
