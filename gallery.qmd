@@ -1,15 +1,39 @@
 ---
 title: "Gallery"
-listing:
-  contents: gallery
-  sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: false
-  filter-ui: false
-  image-height: 10em
-page-layout: full
-title-block-banner: true
-
-
 ---
+
+## Kenya
+<div class="gallery">
+   <figure>
+      <img src="gallery/IMG_9067.JPG" alt="Smile" />
+      <figcaption>Smile</figcaption>
+   </figure>
+   <figure>
+      <img src="gallery/IMG_0905.JPG" alt="Newborn" />
+      <figcaption>Newborn</figcaption>
+   </figure>
+   <figure>
+      <img src="gallery/IMG_9061.JPG" alt="Sisters" />
+      <figcaption>Sisters</figcaption>
+   </figure>
+   <figure>
+      <img src="gallery/IMG_7035.jpg" alt="Students" />
+      <figcaption>Students</figcaption>
+   </figure>
+   <figure>
+      <img src="gallery/IMG_7094.jpg" alt="With Kids" />
+      <figcaption>With Kids</figcaption>
+   </figure>
+   <figure>
+      <img src="gallery/IMG_6989.jpg" alt="Through Window" />
+      <figcaption>Through Window</figcaption>
+   </figure>
+   <figure>
+      <img src="gallery/IMG_8040.jpg" alt="Lone Tree" />
+      <figcaption>Lone Tree</figcaption>
+   </figure>
+   <figure>
+      <img src="gallery/IMG_8050.jpg" alt="Zebra" />
+      <figcaption>Zebra</figcaption>
+   </figure>
+</div>
