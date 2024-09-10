@@ -1,8 +1,8 @@
 [
   {
-    "objectID": "dataviz.html",
-    "href": "dataviz.html",
-    "title": "Data Visualization",
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Project",
     "section": "",
     "text": "No matching items"
   },
@@ -21,9 +21,9 @@
     "text": "I am a PhD candidate in Political Science at the University of Florida, specializing in computational social science research and international political economy. I love finding patterns in complex data and turning them into clear, actionable insights."
   },
   {
-    "objectID": "paper.html",
-    "href": "paper.html",
-    "title": "Paper",
+    "objectID": "publication.html",
+    "href": "publication.html",
+    "title": "Publication",
     "section": "",
     "text": "Gender and the Great Resignation, Phenomenal World, January 28, 2023\nUnseen Inequality: The Gendered Impacts of Welfare Policies, The American Political Science Association’s 120th Annual Conference, September 09, 2024\nExploring the Determinants of China’s Official Financing in Southeast Asia, The International Studies Association 2024 Annual Convention, April 03, 2024\nHidden Burdens: How Family Responsibilities and Job Insecurity Shape Women’s Trade Protectionism, The British International Studies Association 2023 Conference, June 20, 2023\nAssessing the Impacts of the COVID-19 Recession and the Great Recession in the US, 79th Annual Midwest Political Science Association Conference, April 08, 2022"
   },
@@ -42,10 +42,38 @@
     "text": "Smile\n\n\n\n\n\nNewborn\n\n\n\n\n\nSisters\n\n\n\n\n\nStudents\n\n\n\n\n\nWith Kids\n\n\n\n\n\nThrough Window\n\n\n\n\n\nLone Tree\n\n\n\n\n\nZebra"
   },
   {
-    "objectID": "statistics.html",
-    "href": "statistics.html",
-    "title": "Statistics",
+    "objectID": "resource.html",
+    "href": "resource.html",
+    "title": "Resources",
     "section": "",
-    "text": "No matching items"
+    "text": "W3Schools SQL Tutorial – A simple and structured introduction to SQL queries and database management.\nSQLBolt – A beginner-friendly interactive tutorial to learn SQL.\nMode SQL Tutorial – A great tutorial that takes you from basic to advanced SQL concepts.\n\n\n\n\n\nW3Schools Git Tutorial\n[GitKraken Learn Git] (https://www.gitkraken.com/learn/git#concepts)\nGit Basics – A comprehensive guide to Git, covering everything from basics to advanced usage.\nLearn Git Branching – An interactive tutorial to help you understand Git branching and merging.\n\n\n\n\n\nPython Official Documentation – The official documentation for Python, a great place to learn the language.\nReal Python Tutorials – A collection of tutorials and articles on Python for all levels.\nAutomate the Boring Stuff with Python – A popular free book and course to learn Python with practical examples.\n\n\n\n\n\nMarkdown Guide – Learn Markdown to write structured documents like this.\nStack Overflow – The go-to resource for developers when they encounter problems or have questions."
+  },
+  {
+    "objectID": "resource.html#sql",
+    "href": "resource.html#sql",
+    "title": "Resources",
+    "section": "",
+    "text": "W3Schools SQL Tutorial – A simple and structured introduction to SQL queries and database management.\nSQLBolt – A beginner-friendly interactive tutorial to learn SQL.\nMode SQL Tutorial – A great tutorial that takes you from basic to advanced SQL concepts."
+  },
+  {
+    "objectID": "resource.html#git",
+    "href": "resource.html#git",
+    "title": "Resources",
+    "section": "",
+    "text": "W3Schools Git Tutorial\n[GitKraken Learn Git] (https://www.gitkraken.com/learn/git#concepts)\nGit Basics – A comprehensive guide to Git, covering everything from basics to advanced usage.\nLearn Git Branching – An interactive tutorial to help you understand Git branching and merging."
+  },
+  {
+    "objectID": "resource.html#python",
+    "href": "resource.html#python",
+    "title": "Resources",
+    "section": "",
+    "text": "Python Official Documentation – The official documentation for Python, a great place to learn the language.\nReal Python Tutorials – A collection of tutorials and articles on Python for all levels.\nAutomate the Boring Stuff with Python – A popular free book and course to learn Python with practical examples."
+  },
+  {
+    "objectID": "resource.html#additional-tools",
+    "href": "resource.html#additional-tools",
+    "title": "Resources",
+    "section": "",
+    "text": "Markdown Guide – Learn Markdown to write structured documents like this.\nStack Overflow – The go-to resource for developers when they encounter problems or have questions."
   }
 ]

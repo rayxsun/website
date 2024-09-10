@@ -5,24 +5,24 @@ title: "Resources"
 # Data Science Resources
 
 ## SQL
-- [W3Schools SQL Tutorial](https://www.w3schools.com/sql/) – A simple and structured introduction to SQL queries and database management.
-- [SQLBolt](https://sqlbolt.com/) – A beginner-friendly interactive tutorial to learn SQL.
-- [Mode SQL Tutorial](https://mode.com/sql-tutorial/) – A great tutorial that takes you from basic to advanced SQL concepts.
+- [W3Schools SQL Tutorial](https://www.w3schools.com/sql/) 
+- [SQLBolt](https://sqlbolt.com/) 
+- [Mode SQL Tutorial](https://mode.com/sql-tutorial/) 
 
 
 ## Git
 - [W3Schools Git Tutorial](https://www.w3schools.com/git/)
-- [GitKraken Learn Git] (https://www.gitkraken.com/learn/git#concepts)
-- [Git Basics](https://git-scm.com/book/en/v2) – A comprehensive guide to Git, covering everything from basics to advanced usage.
-- [Learn Git Branching](https://learngitbranching.js.org/) – An interactive tutorial to help you understand Git branching and merging.
+- [GitKraken Learn Git](https://www.gitkraken.com/learn/git#concepts)
+- [Git Basics](https://git-scm.com/book/en/v2) 
+- [Learn Git Branching](https://learngitbranching.js.org/)
 
 ## Python
 
-- [Python Official Documentation](https://docs.python.org/3/) – The official documentation for Python, a great place to learn the language.
-- [Real Python Tutorials](https://realpython.com/) – A collection of tutorials and articles on Python for all levels.
-- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) – A popular free book and course to learn Python with practical examples.
+- [Python Official Documentation](https://docs.python.org/3/) 
+- [Real Python Tutorials](https://realpython.com/) 
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) 
 
 ## Additional Tools
 
-- [Markdown Guide](https://www.markdownguide.org/) – Learn Markdown to write structured documents like this.
-- [Stack Overflow](https://stackoverflow.com/) – The go-to resource for developers when they encounter problems or have questions.
+- [Markdown Guide](https://www.markdownguide.org/) 
+- [Stack Overflow](https://stackoverflow.com/) 

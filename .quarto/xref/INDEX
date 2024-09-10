@@ -16,5 +16,14 @@
   },
   "dataviz.qmd": {
     "dataviz.html": "b66a6c41"
+  },
+  "publication.qmd": {
+    "publication.html": "8934db09"
+  },
+  "resource.qmd": {
+    "resource.html": "734cdd92"
+  },
+  "project.qmd": {
+    "project.html": "0e601f22"
   }
 }

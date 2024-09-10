@@ -1,10 +1,7 @@
 {
   "listingMap": {
-    "statistics.qmd": [
-      "statistics"
-    ],
-    "dataviz.qmd": [
-      "dataviz"
+    "project.qmd": [
+      "project"
     ]
   }
 }
