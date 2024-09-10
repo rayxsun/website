@@ -46,34 +46,34 @@
     "href": "resource.html",
     "title": "Resources",
     "section": "",
-    "text": "W3Schools SQL Tutorial – A simple and structured introduction to SQL queries and database management.\nSQLBolt – A beginner-friendly interactive tutorial to learn SQL.\nMode SQL Tutorial – A great tutorial that takes you from basic to advanced SQL concepts.\n\n\n\n\n\nW3Schools Git Tutorial\n[GitKraken Learn Git] (https://www.gitkraken.com/learn/git#concepts)\nGit Basics – A comprehensive guide to Git, covering everything from basics to advanced usage.\nLearn Git Branching – An interactive tutorial to help you understand Git branching and merging.\n\n\n\n\n\nPython Official Documentation – The official documentation for Python, a great place to learn the language.\nReal Python Tutorials – A collection of tutorials and articles on Python for all levels.\nAutomate the Boring Stuff with Python – A popular free book and course to learn Python with practical examples.\n\n\n\n\n\nMarkdown Guide – Learn Markdown to write structured documents like this.\nStack Overflow – The go-to resource for developers when they encounter problems or have questions."
+    "text": "W3Schools SQL Tutorial\nSQLBolt\nMode SQL Tutorial\n\n\n\n\n\nW3Schools Git Tutorial\nGitKraken Learn Git\nGit Basics\nLearn Git Branching\n\n\n\n\n\nPython Official Documentation\nReal Python Tutorials\nAutomate the Boring Stuff with Python\n\n\n\n\n\nMarkdown Guide\nStack Overflow"
   },
   {
     "objectID": "resource.html#sql",
     "href": "resource.html#sql",
     "title": "Resources",
     "section": "",
-    "text": "W3Schools SQL Tutorial – A simple and structured introduction to SQL queries and database management.\nSQLBolt – A beginner-friendly interactive tutorial to learn SQL.\nMode SQL Tutorial – A great tutorial that takes you from basic to advanced SQL concepts."
+    "text": "W3Schools SQL Tutorial\nSQLBolt\nMode SQL Tutorial"
   },
   {
     "objectID": "resource.html#git",
     "href": "resource.html#git",
     "title": "Resources",
     "section": "",
-    "text": "W3Schools Git Tutorial\n[GitKraken Learn Git] (https://www.gitkraken.com/learn/git#concepts)\nGit Basics – A comprehensive guide to Git, covering everything from basics to advanced usage.\nLearn Git Branching – An interactive tutorial to help you understand Git branching and merging."
+    "text": "W3Schools Git Tutorial\nGitKraken Learn Git\nGit Basics\nLearn Git Branching"
   },
   {
     "objectID": "resource.html#python",
     "href": "resource.html#python",
     "title": "Resources",
     "section": "",
-    "text": "Python Official Documentation – The official documentation for Python, a great place to learn the language.\nReal Python Tutorials – A collection of tutorials and articles on Python for all levels.\nAutomate the Boring Stuff with Python – A popular free book and course to learn Python with practical examples."
+    "text": "Python Official Documentation\nReal Python Tutorials\nAutomate the Boring Stuff with Python"
   },
   {
     "objectID": "resource.html#additional-tools",
     "href": "resource.html#additional-tools",
     "title": "Resources",
     "section": "",
-    "text": "Markdown Guide – Learn Markdown to write structured documents like this.\nStack Overflow – The go-to resource for developers when they encounter problems or have questions."
+    "text": "Markdown Guide\nStack Overflow"
   }
 ]
