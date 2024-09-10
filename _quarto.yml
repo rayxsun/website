@@ -8,12 +8,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: statistics.qmd
-        text: Statistics
-      - href: dataviz.qmd
-        text: Data Visualization     
-      - href: paper.qmd
-        text: Paper  
+      - href: project.qmd
+        text: Project
+      - href: publication.qmd
+        text: Publication
+      - href: resource.qmd
+        text: Resource   
       - href: gallery.qmd
         text: Gallery
 

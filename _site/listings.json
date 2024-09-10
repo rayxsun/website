@@ -4,20 +4,6 @@
     "items": []
   },
   {
-    "listing": "/paper.html",
-    "items": [
-      "/index.html",
-      "/gallery.html",
-      "/about.html",
-      "/statistics.html",
-      "/dataviz.html"
-    ]
-  },
-  {
-    "listing": "/gallery.html",
-    "items": []
-  },
-  {
     "listing": "/statistics.html",
     "items": []
   }

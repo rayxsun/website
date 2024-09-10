@@ -1,11 +1,8 @@
 ---
-title: "Paper"
----
----
-title: "Paper"
+title: "Publication"
 ---
 
-<div class="paper">
+<div class="publication">
 
 - **[Gender and the Great Resignation](https://www.phenomenalworld.org/analysis/gender-and-the-great-resignation/)**, *Phenomenal World*, January 28, 2023
 
