@@ -27,7 +27,18 @@ body {
   .publication {
     font-size: 20px;  // Adjust font size for published work section
   }
-
+  // quote
+  blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    margin: 20px auto;
+    padding: 10px;
+    border-left: 5px solid #ddd;
+    color: #555;
+    background-color: #f9f9f9;
+    text-align: center;
+    max-width: 600px;
+  }
   // gallery
   .gallery {
     display: flex;
@@ -57,7 +68,7 @@ body {
     font-size: 14px;
     color: #555; /* Style for the captions */
   }
-  
+
 // Colors
 $cream: #FDFBF7;
 $gray: #64605f;

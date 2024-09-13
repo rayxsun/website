@@ -16,5 +16,6 @@ about:
       href: mailto:sunxiaoformal@gmail.com
       icon: envelope
 ---
+> In the quest for truth, data is the light that guides us out of the shadows of uncertainty.
 
 I am a PhD candidate in Political Science at the University of Florida, specializing in computational social science research and international political economy. I love finding patterns in complex data and turning them into clear, actionable insights.
