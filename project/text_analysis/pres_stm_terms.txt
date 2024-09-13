@@ -1,0 +1,370 @@
+Topic 1 Top Words:
+ 	 Highest Prob: will, ’ve, ’re, know, one, can, day, time, get, children 
+ 	 FREX: god’, johnson, newtown, shot, shoot, beat, loss, lost, adult, amp 
+ 	 Lift: “show, blacksburg, amp, bedroom, rover, hyperbol, scapego, madelein, flinch, tomorrow” 
+ 	 Score: ’ve, ’re, god’, newtown, vaccin, johnson, amp, “show, shoot, can’t 
+Topic 2 Top Words:
+ 	 Highest Prob: afghanistan, will, afghan, presid, american, taliban, war, forc, militari, countri 
+ 	 FREX: taliban, afghan, afghanistan, evacu, mission, troop, kabul, command, militari, capac 
+ 	 Lift: abdullah, afghanistan—’v, counterinsurg, dover, unforgiv, headston, isis-k, war-torn, —thank, siv 
+ 	 Score: afghanistan, afghan, taliban, evacu, ’re, ’ve, kabul, troop, afghanistan—, qaeda 
+Topic 3 Top Words:
+ 	 Highest Prob: will, peopl, kosovo, war, peac, forc, nato, europ, alli, world 
+ 	 FREX: kosovo, kosovar, milosev, serbia, genocid, serbian, ethnic, refuge, nato, tribun 
+ 	 Lift: albanian, southeastern, airstrik, demilitar, kosovar, milosev, serbian, tribun, kosovo, serbia 
+ 	 Score: kosovo, kosovar, milosev, serbia, serbian, albanian, nato, genocid, serb, tribun 
+Topic 4 Top Words:
+ 	 Highest Prob: presid, will, know, peopl, think, get, one, time, issu, like 
+ 	 FREX: disappoint, president-elect, obama, hes, hell, homosexu, joint, didnt, issu, conduct 
+ 	 Lift: allot, homosexu, nunn, president-elect, retrospect, interrog, jake, self-piti, roug, name-cal 
+ 	 Score: president-elect, disappoint, hes, homosexu, dont, obama, hell, allot, analyz, didnt 
+Topic 5 Top Words:
+ 	 Highest Prob: will, law, american, justic, america, countri, enforc, nation, violenc, one 
+ 	 FREX: vandal, riot, enforc, protest, mob, violenc, law, justic, properti, citi 
+ 	 Lift: antifa, precinct, vandal, calam, loot, arsonist, riot, quell, york’, tens 
+ 	 Score: riot, antifa, vandal, mob, loot, enforc, protest, justic, properti, violenc 
+Topic 6 Top Words:
+ 	 Highest Prob: ’re, want, peopl, don’t, get, ’ll, drug, will, ’ve, presid 
+ 	 FREX: opioid, trump, observ, drug, voter, count, ballot, vet, addict, elect 
+ 	 Lift: appel, mail-, berni, renter, lockdown, opioid, drugs—, three-month, sununu, verif 
+ 	 Score: ’re, trump, don’t, opioid, ’ll, ’ve, observ, verif, mail-, voter 
+Topic 7 Top Words:
+ 	 Highest Prob: will, new, must, nation, america, world, american, time, can, peopl 
+ 	 FREX: journey, endur, renew, land, courag, celebr, oath, centuri, spirit, bold 
+ 	 Lift: arafat, lest, grandest, sentiment, inclin, breez, bacteria, reborn, leisur, wander 
+ 	 Score: arafat, breez, centuri, shall, journey, oath, endur, democraci, timeless, peac 
+Topic 8 Top Words:
+ 	 Highest Prob: forc, militari, world, can, one, american, use, unitedstatesofamerica, will, panama 
+ 	 FREX: panama, canal, retreat, militari, forc, isolation, command, regret, leadership, counsel 
+ 	 Lift: bader, isolation, lewinski, brim, maze, seaman, clay, tailor, chin, threshold 
+ 	 Score: panama, bader, retreat, counsel, canal, isolation, militari, somalia, regret, command 
+Topic 9 Top Words:
+ 	 Highest Prob: kill, pakistan, qaeda, bin, laden, american, peopl, will, attack, unitedstatesofamerica 
+ 	 FREX: pakistan, bin, laden, qaeda, compound, osama, kill, baghdadi, pakistani, violent 
+ 	 Lift: baghdadi, compound, cloudless, judgement, exemplifi, wreckag, jordanian, al-baghdadi’, impecc, darken 
+ 	 Score: pakistan, baghdadi, bin, laden, qaeda, compound, pakistani, osama, isi, qaeda’ 
+Topic 10 Top Words:
+ 	 Highest Prob: american, peopl, america, will, can, one, today, black, white, live 
+ 	 FREX: black, kennedi, march, white, robert, divid, lilli, racism, african-american, dare 
+ 	 Lift: ballgam, americamdashth, likeliest, lilli, rift, preval, liz, fatherhood, gritti, pierc 
+ 	 Score: black, kennedi, lilli, march, robert, african-american, racism, shes, ballgam, racist 
+Topic 11 Top Words:
+ 	 Highest Prob: ’re, presid, peopl, want, ’ve, countri, ’ll, work, know, will 
+ 	 FREX: approv, coronavirus, food, sonni, guidelin, case, ventil, mask, healthcar, suppli 
+ 	 Lift: beverag, sonni, adjourn, scam, graviti, families—, shelv, working—, rhode, china— 
+ 	 Score: ’re, coronavirus, sonni, ’ve, ’ll, ventil, guidelin, mask, birx, don’t 
+Topic 12 Top Words:
+ 	 Highest Prob: will, american, year, make, america, let’, can, peopl, ’re, tonight 
+ 	 FREX: let’, cancer, inflat, ukrainian, insulin, fee, wealthi, veteran, price, lower 
+ 	 Lift: -knock, arpa-h, bluff, chokehold, fingertip, moonshot, roe, insulin, semiconductor, vial 
+ 	 Score: let’, ukrainian, insulin, ’re, bluff, cancer, putin, covid-, russia’, inflat 
+Topic 13 Top Words:
+ 	 Highest Prob: nation, will, world, peopl, freedom, new, democraci, can, year, unit 
+ 	 FREX: democraci, freedom, partnership, east, parliament, unit, kingdom, societi, middl, liberti 
+ 	 Lift: calendar, westminst, copenhagen, pragmat, provision, relic, ascend, parliament, henc, leipzig 
+ 	 Score: democraci, parliament, applaus, iraqi, kingdom, freedom, churchil, soviet, liberti, calendar 
+Topic 14 Top Words:
+ 	 Highest Prob: think, make, can, peopl, will, just, presid, thing, american, get 
+ 	 FREX: republican, think, boehner, folk, sure, deficit, coupl, mcconnel, cut, sequest 
+ 	 Lift: cetera, -sex, ditch, gosh, rational, boehner, increment, reid, epa, smartest 
+ 	 Score: cetera, ’re, ’ve, boehner, mcconnel, sequest, that, mitch, folk, deficit 
+Topic 15 Top Words:
+ 	 Highest Prob: american, ’re, job, applaus, will, america, can, peopl, year, get 
+ 	 FREX: infrastructur, let’, corpor, electr, internet, pipe, invest, folk, pandem, plan 
+ 	 Lift: --agener, clyburn, faucet, highest-valu, homecar, neck, parenthet, possibilities”, ibew, best-prepar 
+ 	 Score: ’re, applaus, let’, pipe, vaccin, ’ve, pandem, ’ll, can’t, internet 
+Topic 16 Top Words:
+ 	 Highest Prob: will, american, peopl, troop, iraq, must, secur, forc, somalia, war 
+ 	 FREX: somalia, troop, somali, mission, iraq, iraqi, transit, combat, food, afghan 
+ 	 Lift: convoy, iraq’, mogadishu, somali, johnston, maliki, ember, amphibi, somalia, expeditionari 
+ 	 Score: somalia, somali, iraqi, iraq, troop, mission, iraq’, convoy, afghan, qaeda 
+Topic 17 Top Words:
+ 	 Highest Prob: will, world, financi, market, nation, economi, govern, crisi, american, time 
+ 	 FREX: financi, auto, market, bankruptci, automak, crisi, bank, loan, restructur, agreement 
+ 	 Lift: copay, imf, restructur, meltdown, viabil, automak, liquid, medium-s, caterpillar, disord 
+ 	 Score: financi, auto, bankruptci, automak, restructur, loan, liquid, imf, market, copay 
+Topic 18 Top Words:
+ 	 Highest Prob: peac, will, war, peopl, world, america, can, must, american, bosnia 
+ 	 FREX: bosnia, ireland, northern, peac, marshal, rotc, belfast, bosnian, fought, implement 
+ 	 Lift: croat, rotc, belfast, loyalist, ireland, bosnian, non-negoti, defus, tenaci, patrick 
+ 	 Score: bosnia, ireland, northern, peac, croat, rotc, belfast, marshal, bosnian, cease-fir 
+Topic 19 Top Words:
+ 	 Highest Prob: must, year, will, america, american, new, work, nation, now, peopl 
+ 	 FREX: africa, centuri, rwanda, balanc, budget, social, surplus, welfar, teacher, ghana 
+ 	 Lift: croatia, meehan, shay, lengthen, livabl, redwood, seesaw, narcotraffick, ghana, rwanda 
+ 	 Score: ghana, africa, rwanda, budget, centuri, tonight, welfar, surplus, medicar, croatia 
+Topic 20 Top Words:
+ 	 Highest Prob: will, democraci, america, american, nation, elect, peopl, presid, believ, one 
+ 	 FREX: capitol, democraci, januari, elect, truth, former, lie, soul, mob, vote 
+ 	 Lift: dagger, throat, guardrail, democracy—, insurrect, perenni, democracy’, election—, ironi, scrutin 
+ 	 Score: democraci, capitol, ’re, dagger, januari, mob, can’t, soul, insurrect, overturn 
+Topic 21 Top Words:
+ 	 Highest Prob: presid, ’re, know, want, think, peopl, just, state, said, will 
+ 	 FREX: ventil, mnuchin, fauci, abbott, januari, mitig, birx, yeah, machin, reopen 
+ 	 Lift: dod, really—, mnuchin, assay, sba, hypothet, input, xenophob, mitig, think— 
+ 	 Score: ’re, ventil, mnuchin, fauci, yeah, don’t, abbott, birx, ’ve, ’ll 
+Topic 22 Top Words:
+ 	 Highest Prob: will, presid, sanction, ukrain, ’re, putin, alli, russia, nato, russian 
+ 	 FREX: putin, sanction, ukrain, russia’, russian, russia, impos, sir, nato, putin’ 
+ 	 Lift: donba, nato’, cyberattack, counten, estonia, latvia, premedit, “will, mindset, pariah 
+ 	 Score: putin, ukrain, russia’, sanction, russian, nato, ’re, putin’, donba, sir 
+Topic 23 Top Words:
+ 	 Highest Prob: ’re, peopl, said, know, want, say, great, like, don’t, right 
+ 	 FREX: “sir, biden, guy, jim, impeach, joe, speech, didn’t, hell, unbeliev 
+ 	 Lift: scum, thing”, elis, “great, gorgeous, lesko, roughest, speech”, workout, zeldin 
+ 	 Score: ’re, don’t, “sir, ’ll, didn’t, ’ve, applaus, biden, impeach, jim 
+Topic 24 Top Words:
+ 	 Highest Prob: nation, will, world, war, peac, must, america, human, can, applaus 
+ 	 FREX: west, confront, conflict, aspir, seek, peac, defend, institut, marshal, evil 
+ 	 Lift: delud, faceless, fallibl, divin, wager, resettl, self-defens, graveyard, dish, gloss 
+ 	 Score: applaus, peac, conflict, faceless, defend, marshal, aspir, self-defens, evolut, academi 
+Topic 25 Top Words:
+ 	 Highest Prob: applaus, job, will, american, work, year, make, can, ’ve, now 
+ 	 FREX: colleg, middle-class, manufactur, let’, inequ, student, kid, wage, higher, minimum 
+ 	 Lift: faulti, gruel, mali, real-world, year-old, youngstown, handout, raleigh, churn, employees’ 
+ 	 Score: applaus, ’ve, ’re, let’, middle-class, can’t, inequ, don’t, colleg, ’ll 
+Topic 26 Top Words:
+ 	 Highest Prob: peopl, dont, that, got, weve, want, say, make, just, thing 
+ 	 FREX: dont, that, weve, got, cant, theyr, ive, there, your, youv 
+ 	 Lift: fraudul, blizzard, collin, peterson, theyll, youv, minnesota, dakota, what, dont 
+ 	 Score: dont, that, weve, ive, theyr, cant, there, youv, your, what 
+Topic 27 Top Words:
+ 	 Highest Prob: court, justic, judg, thank, law, will, barrett, suprem, much, life 
+ 	 FREX: ami, barrett, judg, court, scalia, nomin, suprem, jess, clerk, judici 
+ 	 Lift: ginsburg, editor, vivian, coney, barrett, scalia, clerk, sterl, dame, notr 
+ 	 Score: barrett, ami, ginsburg, judg, court, scalia, suprem, jess, dame, notr 
+Topic 28 Top Words:
+ 	 Highest Prob: presid, peopl, think, senat, one, lehrer, will, tax, dole, clinton 
+ 	 FREX: dole, lehrer, clinton, perot, minut, bush, senat, veto, tax, commiss 
+ 	 Lift: hanoi, two-minut, perot, dole, compton, seam, -second, kingpin, mcgovern, hartford 
+ 	 Score: lehrer, dole, perot, clinton, bush, minut, tax, medicar, senat, compton 
+Topic 29 Top Words:
+ 	 Highest Prob: will, applaus, senior, thank, work, health, care, medicar, today, drug 
+ 	 FREX: senior, hiv, medicar, coverag, prescript, medic, aid, drug, medicin, secretari 
+ 	 Lift: hiv, baucus, frist, sub-sahara, max, tommi, annan, montana, hugh, tuberculosi 
+ 	 Score: hiv, applaus, senior, medicar, coverag, prescript, max, frist, mari, health 
+Topic 30 Top Words:
+ 	 Highest Prob: peopl, year, work, american, new, will, can, tax, america, congress 
+ 	 FREX: oppon, relief, coven, tax, welfar, cut, bureaucraci, harder, hes, spend 
+ 	 Lift: behav, income-tax, coven, luca, elvi, paralysi, hid, sunris, unfund, biblic 
+ 	 Score: coven, tax, oppon, welfar, hes, dont, bureaucraci, that, audienc, cut 
+Topic 31 Top Words:
+ 	 Highest Prob: world, peopl, will, ukrain, unitedstatesofamerica, nation, year, stand, war, russia 
+ 	 FREX: ukrain, ukrainian, russian, poland, russia, berlin, putin, russia’, climat, nato 
+ 	 Lift: kharkiv, kyiv, programm, indo-pacif, rule-bas, afraid”, thwart, castl, europe’, ukraine’ 
+ 	 Score: ukrain, ukrainian, kyiv, russia’, putin, russian, poland, nato, zelenskyy, russia 
+Topic 32 Top Words:
+ 	 Highest Prob: will, american, great, nation, countri, america, peopl, everi, never, want 
+ 	 FREX: hero, legaci, patriot, fought, greatest, heritag, lankford, great, cherish, earth 
+ 	 Lift: lankford, dens, fascist, upheld, first-gener, unstopp, ador, patton, great-grandchildren, usa” 
+ 	 Score: lankford, virus, hero, patriot, legaci, heritag, ’ve, fought, patton, loyal 
+Topic 33 Top Words:
+ 	 Highest Prob: vaccin, american, get, will, virus, protect, million, ’re, covid-, test 
+ 	 FREX: vaccin, covid-, virus, pandem, announc, mask, shot, gotten, hospit, test 
+ 	 Lift: low-interest, -home, variant, pediatrician, paramed, adolesc, mode, thin, withheld, co-work 
+ 	 Score: vaccin, covid-, virus, pandem, mask, variant, ’re, low-interest, ’ll, gotten 
+Topic 34 Top Words:
+ 	 Highest Prob: applaus, peopl, grace, know, life, just, make, can, see, ’ve 
+ 	 FREX: grace, gabbi, applaus, church, christina, reverend, tragedi, blind, god’, imagin 
+ 	 Lift: masterpiec, christina, empathi, gabbi, taylor, wretch, charleston, emanuel, lanc, prayer” 
+ 	 Score: applaus, grace, gabbi, christina, reverend, church, ’ve, god’, saturday, masterpiec 
+Topic 35 Top Words:
+ 	 Highest Prob: must, will, america, tonight, new, budget, year, nation, let, time 
+ 	 FREX: budget, propos, ive, tonight, kid, clean, must, drug, chamber, excel 
+ 	 Lift: mid-, sleev, basin, hed, wrong—, multiyear, preordain, beef, thrift, poverty— 
+ 	 Score: budget, tonight, ive, mid-, propos, that, kid, cocain, there, excel 
+Topic 36 Top Words:
+ 	 Highest Prob: applaus, american, year, will, new, america, thank, world, countri, peopl 
+ 	 FREX: alien, applaus, isil, america’, sanctuari, childcar, elli, healthcar, toni, stamp 
+ 	 Lift: isil’, miser, isil, twenty-first, robin, pilgrim, franci, hotter, marsha, big-heart 
+ 	 Score: applaus, isil, america’, alien, elli, sanctuari, ami, childcar, healthcar, miser 
+Topic 37 Top Words:
+ 	 Highest Prob: gun, make, applaus, want, can, famili, peopl, right, ask, now 
+ 	 FREX: gun, newtown, background, connecticut, children’, check, let’, propos, common-sens, sandi 
+ 	 Lift: momentari, aurora, withhold, columbin, creek, clap, victor, parkland, carlo, newtown 
+ 	 Score: gun, applaus, newtown, connecticut, ’ve, let’, ’re, background, children’, momentari 
+Topic 38 Top Words:
+ 	 Highest Prob: nation, peopl, will, unitedstatesofamerica, countri, american, world, work, must, iran 
+ 	 FREX: iran’, iran, sovereignti, venezuela, sovereign, regim, iranian, trade, migrat, soleimani 
+ 	 Lift: soleimani’, night’, qud, chinese-mad, de-escal, yemen’, abject, iran’, government-wid, modern-day 
+ 	 Score: iran’, venezuela, sovereignti, regim, sovereign, iran, soleimani, migrat, isi, iranian 
+Topic 39 Top Words:
+ 	 Highest Prob: will, peopl, work, help, communiti, servic, need, nation, new, govern 
+ 	 FREX: orlean, flood, coast, servic, loan, louisiana, local, mississippi, disast, water 
+ 	 Lift: cot, healer, non-profit, tulan, jazz, whirlwind, uproot, orlean, truckload, chertoff 
+ 	 Score: orlean, non-profit, mississippi, gulf, loan, louisiana, coast, flood, fema, disast 
+Topic 40 Top Words:
+ 	 Highest Prob: presid, ’re, test, thank, will, peopl, ’ve, work, know, can 
+ 	 FREX: test, cruis, pleas, coronavirus, fauci, lab, cdc, symptom, waiv, birx 
+ 	 Lift: oan, waiv, cvs, cruis, respir, diagnost, pierr, symptom, autom, sanit 
+ 	 Score: ’re, coronavirus, virus, ’ve, fauci, birx, yeah, cdc, cruis, test 
+Topic 41 Top Words:
+ 	 Highest Prob: will, peopl, american, year, work, must, health, care, job, can 
+ 	 FREX: deficit, incom, welfar, health, invest, budget, cut, pay, spend, program 
+ 	 Lift: oneil, superfund, wedlock, consumpt, crunch, earned-incom, anderson, gimmick, costliest, handshak 
+ 	 Score: welfar, deficit, budget, oneil, health, incom, tax, invest, insur, reform 
+Topic 42 Top Words:
+ 	 Highest Prob: will, applaus, space, new, year, can, want, peopl, just, ’ve 
+ 	 FREX: nasa, space, orbit, explor, astronaut, technolog, earth, innov, charli, moon 
+ 	 Lift: orbit, nasa, shuttl, sputnik, spacecraft, nasa’, brandon, buzz, apollo, constel 
+ 	 Score: orbit, nasa, space, applaus, astronaut, ’ve, explor, shuttl, brandon, charli 
+Topic 43 Top Words:
+ 	 Highest Prob: world, war, nation, must, will, peac, american, iraq, let, can 
+ 	 FREX: desert, coalit, kuwait, kuwaiti, pride, storm, gulf, victori, baker, aggress 
+ 	 Lift: ordeal, kuwaiti, child-car, gloat, self-disciplin, darker, clear-cut, arab-isra, wrought, yoke 
+ 	 Score: kuwait, kuwaiti, desert, iraq, gulf, coalit, ordeal, baker, storm, victori 
+Topic 44 Top Words:
+ 	 Highest Prob: presid, ’re, get, peopl, thing, know, come, make, can, time 
+ 	 FREX: filibust, facil, unaccompani, signific, circumst, voter, border, trump, bed, people’ 
+ 	 Lift: pair, filibust, yamich, unaccompani, parliamentari, nine-year-old, cecilia, zeke, reelect, forecast 
+ 	 Score: filibust, ’re, unaccompani, ’ve, pair, trump, don’t, facil, reelect, okay 
+Topic 45 Top Words:
+ 	 Highest Prob: presid, think, vice, bush, countri, will, peopl, one, want, question 
+ 	 FREX: dukaki, lehrer, bush, vice, governor, mashek, noriega, hes, dont, peter 
+ 	 Lift: noriega, panamanian, dukaki, youngster, bentsen, reagan-bush, rebut, fantasi, technocrat, haunt 
+ 	 Score: lehrer, dukaki, bush, mashek, panamanian, dont, noriega, peter, youngster, hes 
+Topic 46 Top Words:
+ 	 Highest Prob: american, one, year, will, america, can, now, new, never, right 
+ 	 FREX: selma, beach, soldier, cadet, d-day, march, lewi, west, normandi, armi 
+ 	 Lift: pathfind, ranch, screech, d-day, ferguson, herman, sex, selma, debra, hernandez 
+ 	 Score: selma, pathfind, lewi, cadet, beach, d-day, normandi, ferguson, herman, america’ 
+Topic 47 Top Words:
+ 	 Highest Prob: applaus, laughter, year, just, know, like, right, american, black, can 
+ 	 FREX: black, laughter, tulsa, hate, mother, descend, van, graduat, elli, old 
+ 	 Lift: penn, society”, tulsa, poet, dim, days”, poem, honorari, lauren, “good 
+ 	 Score: applaus, tulsa, black, penn, laughter, ’re, ’ve, don’t, didn’t, van 
+Topic 48 Top Words:
+ 	 Highest Prob: will, peopl, must, peac, israel, can, world, palestinian, right, secur 
+ 	 FREX: isra, palestinian, israel, muslim, jewish, region, islam, israel’, egypt, palestin 
+ 	 Lift: pere, dignity”, hostage-tak, netanyahu, sderot, muslim-major, torah, israel’, isra, cairo 
+ 	 Score: palestinian, isra, israel, muslim, israel’, jewish, region, islam, peac, palestin 
+Topic 49 Top Words:
+ 	 Highest Prob: peopl, right, american, work, action, affirm, victim, want, today, opportun 
+ 	 FREX: affirm, victim, discrimin, disabl, minor, constitut, action, amend, qualifi, equal 
+ 	 Lift: roper, presumpt, quota, feinstein, affirm, archiv, disabilities—, kyl, gender, circumscrib 
+ 	 Score: affirm, discrimin, victim, quota, disabl, accus, minor, qualifi, loan, amend 
+Topic 50 Top Words:
+ 	 Highest Prob: peopl, work, will, say, know, american, year, live, children, good 
+ 	 FREX: church, bishop, -year-old, congressman, african-american, pool, oklahoma, luther, unless, martin 
+ 	 Lift: pta, bishop, bethesda, clown, farthest, --wedlock, barbecu, booth, coher, clement 
+ 	 Score: bishop, church, african-american, luther, pool, oklahoma, martin, -year-old, pta, dont 
+Topic 51 Top Words:
+ 	 Highest Prob: will, world, weapon, peopl, nation, saddam, forc, use, hussein, american 
+ 	 FREX: hussein, saddam, chemic, weapon, disarm, assad, inspector, kuwait, dictat, intellig 
+ 	 Lift: sarin, regrett, assad, disarm, toxin, gass, -volunt, aluminum, high-strength, destruction— 
+ 	 Score: saddam, hussein, assad, disarm, chemic, kuwait, inspector, weapon, regim, iraq 
+Topic 52 Top Words:
+ 	 Highest Prob: will, america, must, year, american, nation, peopl, secur, help, iraq 
+ 	 FREX: iraqi, terrorist, enemi, terror, iraq, account, tax, social, reform, retir 
+ 	 Lift: norwood, reorgan, rostrum, abstin, zarqawi, doctor-pati, ethanol, iran—, uneth, ashley 
+ 	 Score: iraqi, iraq, reorgan, terrorist, qaeda, terror, tax, weve, reform, enemi 
+Topic 53 Top Words:
+ 	 Highest Prob: presid, ’re, know, ’ve, test, peopl, virus, state, want, look 
+ 	 FREX: bryan, virus, surfac, yeah, laboratori, heat, coronavirus, test, summer, sun 
+ 	 Lift: roche—, bryan, sunlight, inject, princeton, ’ll—’ll, virus—, incorrect, got—, warmer 
+ 	 Score: virus, ’re, bryan, yeah, coronavirus, ’ve, ’ll, ventil, surfac, don’t 
+Topic 54 Top Words:
+ 	 Highest Prob: american, year, will, work, america, can, children, peopl, everi, new 
+ 	 FREX: welfar, balanc, bridg, challeng, parent, colleg, grade, centuri, children, teacher 
+ 	 Lift: sarajevo, barri, cafe, pesticid, smog, mccaffrey, v-chip, kennedy-kassebaum, next-gener, yellowston 
+ 	 Score: welfar, sarajevo, balanc, bosnia, budget, grade, centuri, bridg, tonight, parent 
+Topic 55 Top Words:
+ 	 Highest Prob: ’re, ’ve, peopl, applaus, want, know, don’t, get, just, great 
+ 	 FREX: don’t, ’ve, ’re, wouldn’t, cut, laughter, realli, amend, can’t, teacher 
+ 	 Lift: say—’ll, bill”, look—, cpac, everybody—, “develop, equit, rotunda, don, vocat 
+ 	 Score: ’re, ’ve, applaus, don’t, ’ll, can’t, didn’t, wouldn’t, laughter, lotteri 
+Topic 56 Top Words:
+ 	 Highest Prob: thank, will, peopl, justic, senat, famili, american, law, bill, work 
+ 	 FREX: barrett, prefer, oath, constitut, justic, senat, mike, judiciari, judici, jess 
+ 	 Lift: school-ag, derelict, dodd, braun, cassidi, swear, longest-serv, jefford, subcommitte, impecc 
+ 	 Score: barrett, school-ag, judiciari, jess, mike, congresswoman, oath, prefer, justic, judici 
+Topic 57 Top Words:
+ 	 Highest Prob: applaus, ’re, great, thank, peopl, will, countri, know, want, scout 
+ 	 FREX: scout, boy, ice, applaus, usa, crowd, incred, veteran, approv, ’re 
+ 	 Lift: saying—, scout, zink, years”, plane”, humve, “mr, veterans’, industry—, members— 
+ 	 Score: scout, applaus, ’re, ice, boy, ’ll, ’ve, trump, don’t, fake 
+Topic 58 Top Words:
+ 	 Highest Prob: iraq, will, iraqi, terrorist, nation, secur, regim, war, american, can 
+ 	 FREX: iraqi, iraq, regim, saddam, terrorist, council, qaida, enemi, hussein, resolut 
+ 	 Lift: scud, qaida, gibson, deceit, countrysid, petraeus, usama, upris, disintegr, sheikh 
+ 	 Score: iraqi, iraq, saddam, regim, terrorist, qaida, hussein, council, troop, resolut 
+Topic 59 Top Words:
+ 	 Highest Prob: american, will, america, nation, peopl, countri, new, world, year, one 
+ 	 FREX: regul, strategi, pillar, isi, ryan, immigr, infrastructur, stock, trade, dollar 
+ 	 Lift: seamless, merit-bas, jenna, corey, businessman, cheerlead, otto, warmbier, motorcycl, matti 
+ 	 Score: isi, regul, pillar, ryan, strategi, tonight, immigr, america’, tax, justin 
+Topic 60 Top Words:
+ 	 Highest Prob: peopl, cuban, will, american, can, applaus, cuba, unitedstatesofamerica, govern, america 
+ 	 FREX: cuban, cuba, baghdad, shia, sectarian, extremist, reconcili, qaeda, neighborhood, sunni 
+ 	 Lift: shrine, battleship, samarra, de-baathif, cuban, marti, cedar, belgium, castro, shia 
+ 	 Score: cuban, cuba, shia, baghdad, applaus, sectarian, qaeda, castro, shrine, sunni 
+Topic 61 Top Words:
+ 	 Highest Prob: ’re, presid, peopl, know, want, ’ve, said, think, lot, don’t 
+ 	 FREX: trump, wall, deal, tremend, stat, didn’t, lot, china, pretti, yeah 
+ 	 Lift: “listen, bad”, brexit, hanniti, sean, stat, kudlow, asylum, better”, caravan 
+ 	 Score: ’re, trump, stat, ’ve, don’t, ’ll, yeah, didn’t, tremend, witch 
+Topic 62 Top Words:
+ 	 Highest Prob: will, america, terrorist, american, world, nation, terror, countri, everi, secur 
+ 	 FREX: terror, terrorist, homeland, intellig, enemi, evil, afghanistan, regim, septemb, camp 
+ 	 Lift: suffici, jihad, rescuer, fring, arlen, front-lin, alert, pataki, bioterror, tanzania 
+ 	 Score: terrorist, terror, suffici, afghanistan, homeland, regim, qaeda, intellig, islam, evil 
+Topic 63 Top Words:
+ 	 Highest Prob: world, will, soviet, american, nation, new, america, union, peopl, can 
+ 	 FREX: soviet, nafta, union, aampm, trade, allianc, econom, gatt, moscow, eastern 
+ 	 Lift: aggi, expansion, mobley, superior, acheson, mcclure, stalin, aampm, barton, gramm 
+ 	 Score: soviet, nafta, aampm, aggi, superior, weve, barton, gatt, stalin, pact 
+Topic 64 Top Words:
+ 	 Highest Prob: ’re, presid, know, peopl, china, don’t, say, ’ve, want, ’ll 
+ 	 FREX: biden, yeah, china, zach, happi, germani, bad, rip, doesn’t, don’t 
+ 	 Lift: swine, spi, zach, democrat-run, disparag, dirtiest, fisa, president”, refut, —anoth 
+ 	 Score: ’re, yeah, swine, zach, don’t, biden, ’ve, ’ll, vaccin, didn’t 
+Topic 65 Top Words:
+ 	 Highest Prob: research, cell, stem, human, embryo, life, fund, scienc, embryon, scientist 
+ 	 FREX: stem, embryo, cell, embryon, research, ethic, scientist, scienc, potenti, cure 
+ 	 Lift: tissu, umbil, techniqu, vitro, embryon, embryo, cord, stem, biomed, cell 
+ 	 Score: embryo, cell, stem, embryon, research, techniqu, ethic, scientist, deriv, scienc 
+Topic 66 Top Words:
+ 	 Highest Prob: will, world, nation, american, iraq, must, america, aggress, can, one 
+ 	 FREX: kuwait, aggress, gulf, saudi, persian, arabia, oil, saddam, iraq, withdraw 
+ 	 Lift: fahd, hassan, mubarak, ozal, thatcher, unrealist, cuellar, perez, airman, east-west 
+ 	 Score: kuwait, gulf, saddam, iraq, persian, saudi, iraqi, arabia, hussein, aggress 
+Topic 67 Top Words:
+ 	 Highest Prob: will, american, year, now, work, can, peopl, time, make, that 
+ 	 FREX: that, recoveri, mccain, invest, cant, energi, afford, bank, deficit, clean 
+ 	 Lift: tourist, recoverygov, trillion-dollar, forgiven, belt, layoff, mccain, conrad, muddl, trim 
+ 	 Score: that, mccain, dont, recoveri, cant, weve, invest, deficit, tourist, lend 
+Topic 68 Top Words:
+ 	 Highest Prob: health, care, insur, will, can, now, american, peopl, system, plan 
+ 	 FREX: insur, coverag, premium, health, care, doctor, afford, sick, compani, cost 
+ 	 Lift: sicker, turner, scratch, chemotherapi, simplic, checkup, sherrod, simpler, heath, unafford 
+ 	 Score: insur, coverag, health, premium, medicar, dont, applaus, afford, compani, audienc 
+Topic 69 Top Words:
+ 	 Highest Prob: applaus, will, america, can, new, school, american, everi, year, make 
+ 	 FREX: applaus, audienc, four, path, oppon, u-sa, school, child, read, teacher 
+ 	 Lift: u-sa, shuffl, rod, al-qaeda, romney, re-enlist, higher-pay, hamilton, imaginari, madman 
+ 	 Score: applaus, u-sa, audienc, oppon, child, hamilton, romney, path, candid, laughter 
+Topic 70 Top Words:
+ 	 Highest Prob: will, freedom, america, nation, one, american, liberti, year, must, countri 
+ 	 FREX: ideal, liberti, freedom, tyranni, charact, oppon, proclaim, quiet, weak, chosen 
+ 	 Lift: edific, kindl, repos, sabbat, shipwreck, sinai, subsist, thereof, undemocrat, baggag 
+ 	 Score: ideal, freedom, liberti, proclaim, tyranni, undemocrat, oppon, baggag, vari, simmer 
+Topic 71 Top Words:
+ 	 Highest Prob: presid, will, cooper, process, think, must, import, soviet, issu, gorbachev 
+ 	 FREX: gorbachev, cooper, soviet, discuss, process, yugoslavia, mechan, sphere, london, bilater 
+ 	 Lift: unif, sphere, lithuania, bilater, helsinki, gorbachev, yugoslavia, autonomi, analog, -favored-n 
+ 	 Score: gorbachev, yugoslavia, sphere, soviet, unif, bilater, lithuania, cooper, helsinki, london 
+Topic 72 Top Words:
+ 	 Highest Prob: immigr, border, will, work, american, countri, applaus, law, worker, make 
+ 	 FREX: immigr, illeg, border, temporari, undocu, citizenship, legal, patrol, employ, deport 
+ 	 Lift: flake, napolitano, unsustain, manpow, newcom, undocu, alan, assimil, instagram, pued 
+ 	 Score: immigr, unsustain, undocu, illeg, applaus, border, temporari, alan, citizenship, amnesti 
+Topic 73 Top Words:
+ 	 Highest Prob: will, energi, ’ve, applaus, financi, oil, now, peopl, ’re, new 
+ 	 FREX: financi, oil, energi, spill, industri, drill, taxpay, clean, gas, regul 
+ 	 Lift: vessel, spill, company’, aig, charlott, buffett, begrudg, coastlin, drill, oversight 
+ 	 Score: ’ve, applaus, oil, financi, ’re, spill, drill, gulf, energi, regul 
+Topic 74 Top Words:
+ 	 Highest Prob: wenstrup, experienc, bring, love, creat, morn, power, littl, human, certain 
+ 	 FREX: wenstrup, experienc, bring, morn, love, littl, creat, wive, led, power 
+ 	 Lift: wenstrup, experienc, wive, morn, countless, bring, led, brave, love, littl 
+ 	 Score: wenstrup, experienc, wive, morn, countless, led, bring, brave, love, certain 
