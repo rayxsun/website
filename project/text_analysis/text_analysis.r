@@ -304,10 +304,14 @@ sink()
 # Create matrix of topic scores/values
 pres_gamma <- tidy(pres_stm, matrix = "gamma")
 
+## xiao: use theta
+## xiao: extract topic proportions from pres_stm
+pres_gamma <- as.data.frame(pres_stm$theta)
+
 pres_gamma <- pres_gamma %>%
   spread(key = topic, value = gamma)
 
-# Last thing: let's visualize! Replace i with a topic of interest
+# Plotting topic prevalence over time for a specific topic
 
 plot(pres_stm_effects, "date_clean",
      method = "continuous",
@@ -337,6 +341,8 @@ pres_df_stm <- pres_df_stm %>%
 
 pres_df_stm$ID <- seq(1:nrow(pres_df_stm))
 
+#install.packages("quanteda")
+#library(quanteda)
 toks <- tokens(pres_df_stm$clean_text, 
                remove_punct = T, 
                remove_symbols = T, 
@@ -408,7 +414,7 @@ write.csv(five_perc_cos, "immig_words.csv", row.names = FALSE)
 
 # And finally a simple visualization
 five_perc_cos %>%
-  mutate(party = if_else(diff > 0, "D", "R")) %>%
+  mutate(party = if_else(diff > 0, "Dem", "Rep")) %>%
 ggplot(., aes(y = reorder(feature, diff), x = diff,
               color = party)) +
   geom_point() +
