@@ -3,6 +3,8 @@
     "listing": "/project.html",
     "items": [
       "/project/text_analysis/index.html",
+      "/project/news/index.html",
+      "/project/OECD/index.html",
       "/project/multilevel/index.html"
     ]
   }

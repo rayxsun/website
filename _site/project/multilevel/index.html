@@ -9,7 +9,7 @@
 <meta name="author" content="Ray Sun">
 <meta name="dcterms.date" content="2024-05-12">
 
-<title>Multilevel Mixed-Effects Models: Modeling the Determinants of China’s Official Financing in Southeast Asia – Raychel Sun</title>
+<title>A Multilevel Mixed-Effects Approach: Modeling the Determinants of China’s Official Financing in Southeast Asia – Raychel Sun</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -178,9 +178,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Multilevel Mixed-Effects Models: Modeling the Determinants of China’s Official Financing in Southeast Asia</h1>
+      <h1 class="title">A Multilevel Mixed-Effects Approach: Modeling the Determinants of China’s Official Financing in Southeast Asia</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">Statistics</div>
+                <div class="quarto-category">Visualization</div>
               </div>
                   </div>
   </div>
@@ -214,9 +215,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#a-multilevel-mixed-effects-approach-modeling-the-determinants-of-chinas-official-financing-in-southeast-asia" id="toc-a-multilevel-mixed-effects-approach-modeling-the-determinants-of-chinas-official-financing-in-southeast-asia" class="nav-link active" data-scroll-target="#a-multilevel-mixed-effects-approach-modeling-the-determinants-of-chinas-official-financing-in-southeast-asia">A Multilevel Mixed-Effects Approach: Modeling the Determinants of China’s Official Financing in Southeast Asia</a>
-  <ul class="collapse">
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#hypotheses" id="toc-hypotheses" class="nav-link" data-scroll-target="#hypotheses">Hypotheses</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
   <li><a href="#model-building-steps-and-r-code" id="toc-model-building-steps-and-r-code" class="nav-link" data-scroll-target="#model-building-steps-and-r-code">Model Building Steps and R Code</a>
@@ -227,12 +226,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#step-4-add-level-2-predictors-territorial-disputes" id="toc-step-4-add-level-2-predictors-territorial-disputes" class="nav-link" data-scroll-target="#step-4-add-level-2-predictors-territorial-disputes">Step 4: Add Level 2 Predictors (Territorial Disputes)</a></li>
   <li><a href="#step-5-adding-random-effects-for-year" id="toc-step-5-adding-random-effects-for-year" class="nav-link" data-scroll-target="#step-5-adding-random-effects-for-year">Step 5: Adding Random Effects for Year</a></li>
   <li><a href="#step-6-random-slopes-addressing-singularity" id="toc-step-6-random-slopes-addressing-singularity" class="nav-link" data-scroll-target="#step-6-random-slopes-addressing-singularity">Step 6: Random Slopes (Addressing Singularity)</a></li>
-  <li><a href="#model-comparison" id="toc-model-comparison" class="nav-link" data-scroll-target="#model-comparison">Model Comparison</a></li>
+  <li><a href="#step-7-model-comparison" id="toc-step-7-model-comparison" class="nav-link" data-scroll-target="#step-7-model-comparison">Step 7 Model Comparison</a></li>
   </ul></li>
   <li><a href="#descriptive-analysis" id="toc-descriptive-analysis" class="nav-link" data-scroll-target="#descriptive-analysis">Descriptive Analysis</a></li>
   <li><a href="#regression-analysis" id="toc-regression-analysis" class="nav-link" data-scroll-target="#regression-analysis">Regression Analysis</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
@@ -243,11 +241,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="a-multilevel-mixed-effects-approach-modeling-the-determinants-of-chinas-official-financing-in-southeast-asia" class="level1">
-<h1>A Multilevel Mixed-Effects Approach: Modeling the Determinants of China’s Official Financing in Southeast Asia</h1>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>This project examines the factors influencing China’s Official Financing (COF) allocations to Southeast Asian countries, focusing on three key dimensions: economic interdependency, territorial disputes, and institutional embeddedness. Using multilevel mixed-effects models, the analysis accounts for variations across countries and years.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="coefficient.png" class="img-fluid figure-img"></p>
+<figcaption>Coefficients for Institution Hypothesis</figcaption>
+</figure>
+</div>
 </section>
 <section id="hypotheses" class="level2">
 <h2 class="anchored" data-anchor-id="hypotheses">Hypotheses</h2>
@@ -271,11 +273,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
-<p>The dependent variable in our analysis is the <strong>log of COF allocations</strong>, which includes Official Development Assistance (ODA), Other Official Flows (OOF), and VOF data. Independent variables include: - Trade Dependency: The percentage of a country’s imports from and exports to China. - Dispute Intensity: Measured using a binary indicator for territorial disputes. - Institutional Participation: Binary indicators for membership in the BRI and AIIB.</p>
+<p>The dependent variable in my analysis is the <strong>log of COF allocations</strong>, which includes Official Development Assistance (ODA), Other Official Flows (OOF), and VOF data. Independent variables include: - Trade Dependency: The percentage of a country’s imports from and exports to China. - Dispute Intensity: Measured using a binary indicator for territorial disputes. - Institutional Participation: Binary indicators for membership in the BRI and AIIB.</p>
 </section>
 <section id="model-building-steps-and-r-code" class="level2">
 <h2 class="anchored" data-anchor-id="model-building-steps-and-r-code">Model Building Steps and R Code</h2>
-<p>I only use economic interdependency model building to show the steps. The random intercept model allows for varying intercepts by country, capturing country-specific baseline levels of COF.</p>
+<p>I demonstrate the steps using economic interdependency models. The random intercept models account for varying country-specific intercepts, capturing baseline levels of COF for each country.</p>
 <section id="step-1-load-packages-and-data" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-load-packages-and-data">Step 1: Load Packages and Data</h3>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load necessary libraries</span></span>
@@ -294,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="step-2-build-the-null-model-without-predictors" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-build-the-null-model-without-predictors">Step 2: Build the Null Model (Without Predictors)</h3>
-<p>I begin by fitting a null model to verify the necessity of multilevel modeling, using the Intraclass Correlation Coefficient (ICC). The ICC value is 0.13, greater than 0.1, meaning the responses are more similar within a cluster.</p>
+<p>I began by fitting a null model to verify the necessity of multilevel modeling, using the Intraclass Correlation Coefficient (ICC). The ICC value is 0.13, greater than 0.1, meaning the responses are more similar within a cluster.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Null model (without predictors)</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>null_model <span class="ot">&lt;-</span> <span class="fu">lmer</span>(log_OFALL <span class="sc">~</span> <span class="dv">1</span> <span class="sc">+</span> (<span class="dv">1</span> <span class="sc">|</span> Country), <span class="at">data =</span> df, <span class="at">REML =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -306,7 +308,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="step-3-random-intercept-model-only-level-1-predictors" class="level3">
 <h3 class="anchored" data-anchor-id="step-3-random-intercept-model-only-level-1-predictors">Step 3: Random Intercept Model (Only Level 1 Predictors)</h3>
-<p>I fit a random intercept model using level 1 predictors, including imports, exports, and other economic variables.</p>
+<p>I fitted a random intercept model using level 1 predictors, including imports, exports, and other economic variables.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Random intercept model with level 1 predictors</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>trade_int_1 <span class="ot">&lt;-</span> <span class="fu">lmer</span>(log_OFALL <span class="sc">~</span> lag_Imp.Percent.CN <span class="sc">+</span> lag_Exp.Percent.CN <span class="sc">+</span> </span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                    lag_UNSC <span class="sc">+</span> lag_log_GDPpc <span class="sc">+</span> lag_log_Pop <span class="sc">+</span> </span>
@@ -318,7 +320,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="step-4-add-level-2-predictors-territorial-disputes" class="level3">
 <h3 class="anchored" data-anchor-id="step-4-add-level-2-predictors-territorial-disputes">Step 4: Add Level 2 Predictors (Territorial Disputes)</h3>
-<p>Next, I include SCS_Border and SCS_Features to account for territorial disputes as level 2 predictors.</p>
+<p>Next, I included SCS_Border and SCS_Features to account for territorial disputes as level 2 predictors.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Random intercept model with level 1 and level 2 predictors</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>trade_int_2 <span class="ot">&lt;-</span> <span class="fu">lmer</span>(log_OFALL <span class="sc">~</span> lag_Imp.Percent.CN <span class="sc">+</span> lag_Exp.Percent.CN <span class="sc">+</span> </span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                    lag_UNSC <span class="sc">+</span> lag_log_GDPpc <span class="sc">+</span> lag_log_Pop <span class="sc">+</span> </span>
@@ -331,7 +333,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="step-5-adding-random-effects-for-year" class="level3">
 <h3 class="anchored" data-anchor-id="step-5-adding-random-effects-for-year">Step 5: Adding Random Effects for Year</h3>
-<p>We also tested including year as a random effect to capture variations across time.</p>
+<p>I also tested including year as a random effect to capture variations across time.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Random intercept model with year as a random effect</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>trade_int_3 <span class="ot">&lt;-</span> <span class="fu">lmer</span>(log_OFALL <span class="sc">~</span> lag_Imp.Percent.CN <span class="sc">+</span> lag_Exp.Percent.CN <span class="sc">+</span> </span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>                    lag_UNSC <span class="sc">+</span> lag_log_GDPpc <span class="sc">+</span> lag_log_Pop <span class="sc">+</span> </span>
@@ -344,7 +346,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="step-6-random-slopes-addressing-singularity" class="level3">
 <h3 class="anchored" data-anchor-id="step-6-random-slopes-addressing-singularity">Step 6: Random Slopes (Addressing Singularity)</h3>
-<p>Finally, we attempted to fit a model with random slopes for imports and exports but encountered singularity issues, which indicated overfitting.</p>
+<p>Finally, I attempted to fit a model with random slopes for imports and exports but encountered singularity issues, which indicated overfitting.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Random intercept and slope model (with singularity issues)</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>trade_slop_1 <span class="ot">&lt;-</span> <span class="fu">lmer</span>(log_OFALL <span class="sc">~</span> lag_Imp.Percent.CN <span class="sc">+</span> lag_Exp.Percent.CN <span class="sc">+</span> </span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>                     lag_UNSC <span class="sc">+</span> lag_log_GDPpc <span class="sc">+</span> lag_log_Pop <span class="sc">+</span> </span>
@@ -355,9 +357,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Check for singularity</span></span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">isSingular</span>(trade_slop_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="model-comparison" class="level3">
-<h3 class="anchored" data-anchor-id="model-comparison">Model Comparison</h3>
-<p>We compare the models using ANOVA to identify the best-fitting model. The random intercept model with level 1 predictors (Model 1) proves to be superior in terms of parsimony and diagnostic performance.</p>
+<section id="step-7-model-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="step-7-model-comparison">Step 7 Model Comparison</h3>
+<p>I compared the models using ANOVA to identify the best-fitting model. The random intercept model with level 1 predictors (Model 1) proves to be superior in terms of parsimony and diagnostic performance.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Compare models using ANOVA</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(trade_int_1, trade_int_2)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">anova</span>(trade_int_1, trade_int_3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -408,7 +410,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This project demonstrates that economic interdependency—particularly in terms of imports from China—plays a significant role in shaping China’s COF allocations. However, territorial disputes and institutional participation show more nuanced and often insignificant effects. The random intercept model with level 1 predictors provided the best performance, balancing parsimony and robustness.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

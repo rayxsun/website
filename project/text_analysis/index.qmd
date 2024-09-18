@@ -1,20 +1,18 @@
 ---
-title: "NLP: Partisan Framing of Immigration in U.S. Presidential Speeches"
+title: "Natural Language Processing (NLP): Partisan Framing of Immigration in U.S. Presidential Speeches"
 author: "Ray Sun"
 date: "2024-09-10"
 categories:
   - Natural Language Processing
+  - Visualization
 tags:
-  - Structural Topic Model
+  - Structural Topic Modeling (STM)
   - Word Embeddings
   - Cosine Similarity
 format: html
 ---
 
-
-# **Natural Language Processing (NLP): Partisan Framing of Immigration in U.S. Presidential Speeches**
-
-**Methods Used**: Structural Topic Modeling (STM), Word Embeddings, Cosine Similarity, `quanteda`
+## Introduction
 
 This project analyzes U.S. presidential speeches from 1789 to 2023, comparing how Democratic and Republican presidents frame immigration. Using **STM** and **word embeddings**, the study uncovers significant rhetorical differences between the two parties, highlighting contrasting priorities in the political discourse on immigration.
 

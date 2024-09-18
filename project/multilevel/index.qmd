@@ -1,9 +1,10 @@
 ---
-title: "Multilevel Mixed-Effects Models: Modeling the Determinants of China's Official Financing in Southeast Asia"
+title: "A Multilevel Mixed-Effects Approach: Modeling the Determinants of China's Official Financing in Southeast Asia"
 author: "Ray Sun"
 date: "2024-05-12"
 categories: 
   - Statistics
+  - Visualization
 tags: 
   - Multilevel Model
   - Hypothesis Testing
@@ -12,11 +13,11 @@ tags:
 format: html
 ---
 
-# A Multilevel Mixed-Effects Approach: Modeling the Determinants of China's Official Financing in Southeast Asia
-
 ## Introduction
 
 This project examines the factors influencing China’s Official Financing (COF) allocations to Southeast Asian countries, focusing on three key dimensions: economic interdependency, territorial disputes, and institutional embeddedness. Using multilevel mixed-effects models, the analysis accounts for variations across countries and years.
+
+![Coefficients for Institution Hypothesis](coefficient.png)
 
 ## Hypotheses
 
@@ -33,7 +34,7 @@ This project examines the factors influencing China’s Official Financing (COF)
 
 
 ## Data
-The dependent variable in our analysis is the **log of COF allocations**, which includes Official Development Assistance (ODA), Other Official Flows (OOF), and VOF data.
+The dependent variable in my analysis is the **log of COF allocations**, which includes Official Development Assistance (ODA), Other Official Flows (OOF), and VOF data.
 Independent variables include:
 - Trade Dependency: The percentage of a country’s imports from and exports to China.
 - Dispute Intensity: Measured using a binary indicator for territorial disputes.
@@ -41,7 +42,7 @@ Independent variables include:
 
 ## Model Building Steps and R Code
 
-I only use economic interdependency model building to show the steps. The random intercept model allows for varying intercepts by country, capturing country-specific baseline levels of COF.
+I demonstrate the steps using economic interdependency models. The random intercept models account for varying country-specific intercepts, capturing baseline levels of COF for each country.
 
 ### Step 1: Load Packages and Data
 
@@ -62,7 +63,7 @@ df <- df %>%
 ```
 
 ### Step 2: Build the Null Model (Without Predictors)
-I begin by fitting a null model to verify the necessity of multilevel modeling, using the Intraclass Correlation Coefficient (ICC). The ICC value is 0.13, greater than 0.1, meaning the responses are more similar within a cluster.
+I began by fitting a null model to verify the necessity of multilevel modeling, using the Intraclass Correlation Coefficient (ICC). The ICC value is 0.13, greater than 0.1, meaning the responses are more similar within a cluster.
 
 ```r
 # Null model (without predictors)
@@ -76,7 +77,7 @@ print(paste("ICC:", round(icc, 3)))  # ICC confirms the necessity of multilevel 
 ```
 
 ### Step 3: Random Intercept Model (Only Level 1 Predictors)
-I fit a random intercept model using level 1 predictors, including imports, exports, and other economic variables.
+I fitted a random intercept model using level 1 predictors, including imports, exports, and other economic variables.
 
 ```r
 # Random intercept model with level 1 predictors
@@ -90,7 +91,7 @@ summary(trade_int_1)
 ```
 
 ### Step 4: Add Level 2 Predictors (Territorial Disputes)
-Next, I include SCS_Border and SCS_Features to account for territorial disputes as level 2 predictors.
+Next, I included SCS_Border and SCS_Features to account for territorial disputes as level 2 predictors.
 
 ```r
 # Random intercept model with level 1 and level 2 predictors
@@ -105,7 +106,7 @@ summary(trade_int_2)
 ```
 
 ### Step 5: Adding Random Effects for Year
-We also tested including year as a random effect to capture variations across time.
+I also tested including year as a random effect to capture variations across time.
 
 ```r
 # Random intercept model with year as a random effect
@@ -120,7 +121,7 @@ summary(trade_int_3)
 ```
 
 ### Step 6: Random Slopes (Addressing Singularity)
-Finally, we attempted to fit a model with random slopes for imports and exports but encountered singularity issues, which indicated overfitting.
+Finally, I attempted to fit a model with random slopes for imports and exports but encountered singularity issues, which indicated overfitting.
 ```r
 # Random intercept and slope model (with singularity issues)
 trade_slop_1 <- lmer(log_OFALL ~ lag_Imp.Percent.CN + lag_Exp.Percent.CN + 
@@ -133,8 +134,8 @@ trade_slop_1 <- lmer(log_OFALL ~ lag_Imp.Percent.CN + lag_Exp.Percent.CN +
 isSingular(trade_slop_1)
 ```
 
-### Model Comparison
-We compare the models using ANOVA to identify the best-fitting model. The random intercept model with level 1 predictors (Model 1) proves to be superior in terms of parsimony and diagnostic performance.
+### Step 7 Model Comparison
+I compared the models using ANOVA to identify the best-fitting model. The random intercept model with level 1 predictors (Model 1) proves to be superior in terms of parsimony and diagnostic performance.
 ```r
 # Compare models using ANOVA
 anova(trade_int_1, trade_int_2)

@@ -1,0 +1,60 @@
+---
+title: "Exploring Gendered Policy Outcomes: Multilevel Modeling of Family Policy Effects on Labor Market in OECD Countries"
+author: "Ray Sun"
+date: "2024-06-9"
+categories: 
+  - Visualization
+  - Regression
+  - Statistics
+tags: 
+  - Multi-level Modeling
+format: html
+---
+
+![Figure 6 Relationships between LFPR Gender Gap and Family Benefits](figure6.png)
+
+## Introduction
+This project explores how family policies in OECD countries impact labor market outcomes for men and women differently. Drawing from Esping-Andersen's (1990) welfare state typology (liberal, conservative, and social democratic welfare regimes) and theories on the sexual division of labor, the analysis investigates whether public spending on family benefits has gendered effects on labor force participation (LFPR) and unemployment rates (UR). Data from 18 OECD countries from 1999 to 2019 is used, and the project employs multilevel modeling to assess these dynamics.
+
+## Research Question
+Does public spending on family benefits affect men and women differently in terms of labor force participation and unemployment rates, and does it help reduce gender gaps in these areas?
+
+## Data & Methodology
+-	Data Sources: OECD, World Bank, and UN Human Development Reports.
+-	Dependent Variables (DVs): Women’s and men’s LFPR and UR, along with gender gaps in these metrics.
+-	Independent Variable (IV): Government spending on family benefits as a percentage of GDP.
+-	Control Variables: GDP per capita, fertility rate, gender inequality index, social benefits, and unemployment benefits.
+- Multilevel Models: To capture the variation in labor market outcomes across different welfare state regimes (liberal, conservative, and social democratic), multilevel models are employed. These models account for time effects and country-level (entity) effects.
+- Group Indicator: A nominal variable, "welfare group," was created to categorize the 18 OECD countries according to Esping-Andersen's welfare state typology.
+
+![Table 1 Welfare Group Indicator](indicator.png)
+
+## Model Justification
+
+The multilevel model with entity and time effects is used for two reasons. First, the distributions of men’s and women’s LFPR and UR, as well as the LFPR and UR gender gaps, differ among the three types of welfare regimes (liberal, conservative, social democratic), as seen in Figures 2 and 3. For instance, group 1 (liberal) countries have a female LFPR between 70% and 75%, which is lower than the 75%-80% seen in conservative and social democratic countries. Additionally, the effects of family benefits differ by welfare group, as shown in Figure 4. Therefore, it is more appropriate to use multilevel modeling, which accounts for these differences, rather than pooled ordinary linear regression. Furthermore, the effects may change over time, necessitating the inclusion of time effects.
+
+![Figure 2 The Histograms of Six DVs](figure2.png)
+![Figure 3 The Distributions of Six DVs from 1999 to 2019](figure3.png)
+![Figure 4 Relationships between Female LFPR and Aamily Benefits](figure4.png)
+![Figure 5 Relationships between Male LFPR and Family Benefits](figure5.png)
+![Figure 6 Relationships between LFPR Gender Gap and Family Benefits](figure6.png)
+
+## Multicollinearity Check
+
+Before model building, the variance inflation factor (VIF) was checked to assess multicollinearity among the independent variables. All VIFs fell between 1 and 3, indicating moderate correlation. Hence, multicollinearity was not a significant issue.
+![Table 2 VIFs](VIF.png)
+
+## Regression Results
+
+### Key Findings
+
+1.	Men’s Labor Force Participation: Family benefits positively influence men’s LFPR. A 1% increase in family spending results in a 0.57% increase in men’s LFPR, indicating that family policies may disproportionately benefit men in terms of labor force participation.
+2.	Women’s and Men’s Unemployment Rates: Family benefits reduce both women’s and men’s UR, with a larger effect on women. A 1% increase in family spending reduces women’s UR by 1%, while men’s UR decreases by 0.6%.
+3.	Gender Gap in Unemployment: The increase in family benefits also helps narrow the UR gender gap by 0.44%. This suggests that family policies might be more effective at addressing unemployment disparities than labor force participation disparities.
+4.	Mixed Results on Gender Gaps in LFPR: The models do not show significant effects of family policies on reducing LFPR gender gaps, indicating that while family policies help with unemployment, they may not promote gender parity in workforce participation.
+
+![Table 2 Regression Table](model.png)
+
+## Discussion and Limitations
+
+The mixed results could be due to two main limitations of the models. First, the models and variables may not fully capture the gendered effects of family policies. Future research could explore additional datasets and variable constructions to better assess these impacts. Second, the analysis may have omitted important variables, such as the financial crises and other exogenous shocks that occurred between 1999 and 2019, which could affect both LFPR and UR. These events merit further exploration in future studies.
