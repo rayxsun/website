@@ -25,5 +25,17 @@
   },
   "project.qmd": {
     "project.html": "0e601f22"
+  },
+  "project/text_analysis/project1.qmd": {
+    "project1.html": "f7357a37"
+  },
+  "project/multilevel/project2.qmd": {
+    "project2.html": "e4c2277d"
+  },
+  "project/text_analysis/index.qmd": {
+    "index.html": "e35bfc8a"
+  },
+  "project/multilevel/index.qmd": {
+    "index.html": "1e9d5b46"
   }
 }

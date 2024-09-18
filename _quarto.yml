@@ -9,11 +9,11 @@ website:
       - href: index.qmd
         text: Home
       - href: project.qmd
-        text: Project
+        text: Projects
       - href: publication.qmd
         text: Publication
       - href: resource.qmd
-        text: Resource   
+        text: Resources   
       - href: gallery.qmd
         text: Gallery
 

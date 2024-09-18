@@ -1,0 +1,169 @@
+---
+title: "Multilevel Mixed-Effects Models: Modeling the Determinants of China's Official Financing in Southeast Asia"
+author: "Ray Sun"
+date: "2024-05-12"
+categories: 
+  - Statistics
+tags: 
+  - Multilevel Model
+  - Hypothesis Testing
+  - Regression
+
+format: html
+---
+
+# A Multilevel Mixed-Effects Approach: Modeling the Determinants of China's Official Financing in Southeast Asia
+
+## Introduction
+
+This project examines the factors influencing China’s Official Financing (COF) allocations to Southeast Asian countries, focusing on three key dimensions: economic interdependency, territorial disputes, and institutional embeddedness. Using multilevel mixed-effects models, the analysis accounts for variations across countries and years.
+
+## Hypotheses
+
+- **Economic Interdependence**:
+  - **H1(a)**: A higher proportion of imports from China is positively associated with increased COF allocations.
+  - **H1(b)**: A higher proportion of exports to China is associated with increased COF allocations.
+- **Territorial Disputes and Resolution**:
+  - **H2(a)**: Increased territorial dispute intensity is negatively associated with COF allocations.
+  - **H2(b)**: Peaceful resolution of territorial disputes is negatively associated with COF allocations.
+
+- **Institutional Embeddedness**:
+  - **H3(a)**: Membership in the Belt and Road Initiative (BRI) is positively associated with COF allocations.
+  - **H3(b)**: Membership in the Asian Infrastructure Investment Bank (AIIB) is positively associated with COF allocations.
+
+
+## Data
+The dependent variable in our analysis is the **log of COF allocations**, which includes Official Development Assistance (ODA), Other Official Flows (OOF), and VOF data.
+Independent variables include:
+- Trade Dependency: The percentage of a country’s imports from and exports to China.
+- Dispute Intensity: Measured using a binary indicator for territorial disputes.
+- Institutional Participation: Binary indicators for membership in the BRI and AIIB.
+
+## Model Building Steps and R Code
+
+I only use economic interdependency model building to show the steps. The random intercept model allows for varying intercepts by country, capturing country-specific baseline levels of COF.
+
+### Step 1: Load Packages and Data
+
+```r
+# Load necessary libraries
+library(lme4)  # For mixed-effects modeling
+library(readxl)  # To read Excel data
+library(tidyverse)  # For data manipulation and visualization
+
+# Load the dataset
+df <- read_excel("data.xlsx")
+
+# Log-transform key variables
+df <- df %>%
+  mutate(log_OFALL = log(OFALL), log_GDPpc = log(GDP_per_capita), 
+         log_Pop = log(Population), log_OECD = log(OECD_DAC), 
+         log_ADB_Loans = log(ADB_Loans))
+```
+
+### Step 2: Build the Null Model (Without Predictors)
+I begin by fitting a null model to verify the necessity of multilevel modeling, using the Intraclass Correlation Coefficient (ICC). The ICC value is 0.13, greater than 0.1, meaning the responses are more similar within a cluster.
+
+```r
+# Null model (without predictors)
+null_model <- lmer(log_OFALL ~ 1 + (1 | Country), data = df, REML = FALSE)
+
+# Display summary and calculate ICC
+summary(null_model)
+icc <- as.numeric(VarCorr(null_model)$Country[1] / 
+                  (VarCorr(null_model)$Country[1] + attr(VarCorr(null_model), "sc")^2))
+print(paste("ICC:", round(icc, 3)))  # ICC confirms the necessity of multilevel modeling
+```
+
+### Step 3: Random Intercept Model (Only Level 1 Predictors)
+I fit a random intercept model using level 1 predictors, including imports, exports, and other economic variables.
+
+```r
+# Random intercept model with level 1 predictors
+trade_int_1 <- lmer(log_OFALL ~ lag_Imp.Percent.CN + lag_Exp.Percent.CN + 
+                    lag_UNSC + lag_log_GDPpc + lag_log_Pop + 
+                    lag_Civil_Conflict + lag_Poly + lag_log_OECD + 
+                    lag_log_ADB_Loans + (1 | Country), data = df, REML = FALSE)
+
+# Model summary
+summary(trade_int_1)
+```
+
+### Step 4: Add Level 2 Predictors (Territorial Disputes)
+Next, I include SCS_Border and SCS_Features to account for territorial disputes as level 2 predictors.
+
+```r
+# Random intercept model with level 1 and level 2 predictors
+trade_int_2 <- lmer(log_OFALL ~ lag_Imp.Percent.CN + lag_Exp.Percent.CN + 
+                    lag_UNSC + lag_log_GDPpc + lag_log_Pop + 
+                    lag_Civil_Conflict + lag_Poly + lag_log_OECD + 
+                    lag_log_ADB_Loans + SCS_Border + SCS_Features + 
+                    (1 | Country), data = df, REML = FALSE)
+
+# Model summary
+summary(trade_int_2)
+```
+
+### Step 5: Adding Random Effects for Year
+We also tested including year as a random effect to capture variations across time.
+
+```r
+# Random intercept model with year as a random effect
+trade_int_3 <- lmer(log_OFALL ~ lag_Imp.Percent.CN + lag_Exp.Percent.CN + 
+                    lag_UNSC + lag_log_GDPpc + lag_log_Pop + 
+                    lag_Civil_Conflict + lag_Poly + lag_log_OECD + 
+                    lag_log_ADB_Loans + SCS_Border + SCS_Features + 
+                    (1 | Country) + (1 | Year), data = df, REML = FALSE)
+
+# Model summary
+summary(trade_int_3)
+```
+
+### Step 6: Random Slopes (Addressing Singularity)
+Finally, we attempted to fit a model with random slopes for imports and exports but encountered singularity issues, which indicated overfitting.
+```r
+# Random intercept and slope model (with singularity issues)
+trade_slop_1 <- lmer(log_OFALL ~ lag_Imp.Percent.CN + lag_Exp.Percent.CN + 
+                     lag_UNSC + lag_log_GDPpc + lag_log_Pop + 
+                     lag_Civil_Conflict + lag_Poly + lag_log_OECD + 
+                     lag_log_ADB_Loans + (1 + lag_Imp.Percent.CN + 
+                     lag_Exp.Percent.CN | Country), data = df, REML = FALSE)
+
+# Check for singularity
+isSingular(trade_slop_1)
+```
+
+### Model Comparison
+We compare the models using ANOVA to identify the best-fitting model. The random intercept model with level 1 predictors (Model 1) proves to be superior in terms of parsimony and diagnostic performance.
+```r
+# Compare models using ANOVA
+anova(trade_int_1, trade_int_2)
+anova(trade_int_1, trade_int_3)
+```
+
+## Descriptive Analysis
+
+Key Insight: Countries like Indonesia, Laos, Malaysia, and the Philippines experienced significant increases in COF from 2015 onwards, particularly during periods of heightened South China Sea tensions.
+
+![Figure 1: COF Distributions Across Southeast Asia (2000-2021)](Figure1.png)
+
+## Regression Analysis
+
+- Key Insight: Imports from China significantly influence COF allocations (p < 0.05), supporting H1(a), while exports do not significantly impact COF, rejecting H1(b). For every 1% increase in the proportion of imports from China in the previous year, the expected log COF increases by 0.11 (Model 1).
+
+![Table 1: The Regression Results of Imports and Exports on COF Allocations](table1.png)
+
+- Key Insight: Territorial disputes and resolutions show mixed impacts, with peaceful resolutions negatively associated with COF allocations, rejecting H2.
+
+![Table 2: The Regression Results of Disputes and Resolution on COF Allocations](table1.png)
+
+- Key Insight: BRI and AIIB memberships do not have statistically significant effects on COF allocations, rejecting H3.
+
+![Table 3: The Regression Results of BRI and AIIB Membership on COF Allocations](table1.png)
+
+## Conclusion
+
+This project demonstrates that economic interdependency—particularly in terms of imports from China—plays a significant role in shaping China's COF allocations. However, territorial disputes and institutional participation show more nuanced and often insignificant effects. The random intercept model with level 1 predictors provided the best performance, balancing parsimony and robustness.
+
+
+

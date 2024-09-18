@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Ray Sun">
-<meta name="dcterms.date" content="2024-09-10">
 
-<title>Portfolio Projects – Raychel Sun</title>
+<title>Projects – Raychel Sun</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -115,9 +79,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
 
     const options = {
-      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -168,7 +132,7 @@ window.Quarto = {
 <link rel="stylesheet" href="mystyle.scss">
 </head>
 
-<body class="floating nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -191,7 +155,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./project.html" aria-current="page"> 
-<span class="menu-text">Project</span></a>
+<span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publication.html"> 
@@ -199,7 +163,7 @@ window.Quarto = {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./resource.html"> 
-<span class="menu-text">Resource</span></a>
+<span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./gallery.html"> 
@@ -235,35 +199,17 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Portfolio Projects</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">Data Science</div>
-                <div class="quarto-category">Text Analysis</div>
-                <div class="quarto-category">NLP</div>
-                <div class="quarto-category">STM</div>
-              </div>
-                  </div>
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Projects</h1>
+                      </div>
   </div>
     
   
-  <div class="quarto-title-meta column-body">
+  <div class="quarto-title-meta column-page-left">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Ray Sun </p>
-            </div>
-    </div>
       
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">September 10, 2024</p>
-      </div>
-    </div>
     
       
     </div>
@@ -271,102 +217,89 @@ window.Quarto = {
   
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Project List</h2>
-   
-  <ul>
-  <li><a href="#natural-language-processing-nlp-partisan-framing-of-immigration-in-u.s.-presidential-speeches" id="toc-natural-language-processing-nlp-partisan-framing-of-immigration-in-u.s.-presidential-speeches" class="nav-link active" data-scroll-target="#natural-language-processing-nlp-partisan-framing-of-immigration-in-u.s.-presidential-speeches">1. Natural Language Processing (NLP): Partisan Framing of Immigration in U.S. Presidential Speeches</a>
-  <ul class="collapse">
-  <li><a href="#key-findings" id="toc-key-findings" class="nav-link" data-scroll-target="#key-findings">Key Findings</a></li>
-  <li><a href="#party-immigration-stance" id="toc-party-immigration-stance" class="nav-link" data-scroll-target="#party-immigration-stance">Party Immigration Stance</a></li>
-  <li><a href="#steps" id="toc-steps" class="nav-link" data-scroll-target="#steps">Steps</a></li>
-  </ul></li>
-  </ul>
-</nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Natural Language Processing">Natural Language Processing <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Statistics">Statistics <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-body" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 
-<section id="natural-language-processing-nlp-partisan-framing-of-immigration-in-u.s.-presidential-speeches" class="level2">
-<h2 class="anchored" data-anchor-id="natural-language-processing-nlp-partisan-framing-of-immigration-in-u.s.-presidential-speeches">1. Natural Language Processing (NLP): Partisan Framing of Immigration in U.S. Presidential Speeches</h2>
-<p><strong>Methods Used</strong>: Structural Topic Modeling (STM), Word Embeddings, Cosine Similarity, <code>quanteda</code></p>
-<p>This project analyzes U.S. presidential speeches from 1789 to 2023, comparing how Democratic and Republican presidents frame immigration. Using <strong>STM</strong> and <strong>word embeddings</strong>, the study uncovers significant rhetorical differences between the two parties, highlighting contrasting priorities in the political discourse on immigration.</p>
-<section id="key-findings" class="level3">
-<h3 class="anchored" data-anchor-id="key-findings">Key Findings</h3>
-<ul>
-<li><p><strong>Republican Presidents</strong>: Words such as “border”, “enforcement”, “patrol”, and “aliens” suggest a focus on <strong>security</strong> and <strong>law enforcement</strong>.</p></li>
-<li><p><strong>Democratic Presidents</strong>: Words like “spending”, “taxes”, and “economic” indicate a framing of immigration around <strong>economic</strong> issues.</p></li>
-</ul>
-</section>
-<section id="party-immigration-stance" class="level3">
-<h3 class="anchored" data-anchor-id="party-immigration-stance">Party Immigration Stance</h3>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="project/text_analysis/immigrant.png" class="img-fluid figure-img"></p>
-<figcaption>Cosine Similarity Plot</figcaption>
-</figure>
-</div>
-<p>The Republican Party’s discourse reflects the party’s traditional stance of prioritizing border security and strict immigration controls, often positioning immigration as a threat to national security (Hajnal &amp; Rivera, 2014). The use of terms like “border” and “enforcement” aligns with Republican policies that emphasize the construction of physical barriers, increased immigration law enforcement, and tighter restrictions on immigration, particularly from Mexico and Central America (Zolberg, 2006).</p>
-<p>On the other hand, the Democratic Party’s rhetoric links immigration to issues of public finance and economic policy. Democrats often emphasize the economic benefits of immigration, highlighting the positive contributions of immigrants to the labor market and the economy at large (Peri, 2016). This reflects the party’s more inclusive stance, advocating for comprehensive immigration reform that includes pathways to citizenship for undocumented immigrants and the protection of immigrant rights (Wong, 2017).</p>
-<hr>
-</section>
-<section id="steps" class="level3">
-<h3 class="anchored" data-anchor-id="steps">Steps</h3>
-<section id="data-preprocessing" class="level4">
-<h4 class="anchored" data-anchor-id="data-preprocessing">Data Preprocessing</h4>
-<p>The speeches were cleaned and tokenized using <code>quanteda</code>, removing punctuation, stopwords, and short words.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>toks <span class="ot">&lt;-</span> <span class="fu">tokens</span>(pres_df_stm<span class="sc">$</span>clean_text, <span class="at">remove_punct =</span> <span class="cn">TRUE</span>, <span class="at">remove_symbols =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>toks_nostop <span class="ot">&lt;-</span> <span class="fu">tokens_select</span>(toks, <span class="at">pattern =</span> <span class="fu">stopwords</span>(<span class="st">"en"</span>), <span class="at">selection =</span> <span class="st">"remove"</span>, <span class="at">min_nchar =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="constructing-the-structural-topic-modeling" class="level4">
-<h4 class="anchored" data-anchor-id="constructing-the-structural-topic-modeling">Constructing the Structural Topic Modeling</h4>
-<p>An STM model was used to discover the key topics within the speeches, particularly focusing on their temporal evolution.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>pres_stm <span class="ot">&lt;-</span> <span class="fu">stm</span>(docs, vocab, <span class="at">K =</span> <span class="dv">0</span>, <span class="at">prevalence =</span> <span class="sc">~</span> <span class="fu">s</span>(date_clean), <span class="at">data =</span> meta, <span class="at">init.type =</span> <span class="st">"Spectral"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>pres_stm_effects <span class="ot">&lt;-</span> <span class="fu">estimateEffect</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">73</span> <span class="sc">~</span> <span class="fu">s</span>(date_clean), <span class="at">stmobj =</span> pres_stm, <span class="at">metadata =</span> meta, <span class="at">uncertainty =</span> <span class="st">"None"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="applying-word-embeddings" class="level4">
-<h4 class="anchored" data-anchor-id="applying-word-embeddings">Applying Word Embeddings</h4>
-<p>To explore the context in which immigration-related terms were used, word embeddings were applied to analyze semantic differences between the two political parties.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>immig_toks <span class="ot">&lt;-</span> <span class="fu">tokens_context</span>(<span class="at">x =</span> toks, <span class="at">pattern =</span> <span class="fu">c</span>(<span class="st">"immigration"</span>, <span class="st">"immigrants"</span>), <span class="at">window =</span> <span class="dv">8</span>L)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>immig_dfm <span class="ot">&lt;-</span> <span class="fu">dfm</span>(immig_toks)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="visualizing-partisan-differences" class="level4">
-<h4 class="anchored" data-anchor-id="visualizing-partisan-differences">Visualizing Partisan Differences</h4>
-<p>The cosine similarity analysis revealed key words associated with each party’s framing of immigration. The plot below shows the most distinctive words for each party.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>five_perc_cos <span class="sc">%&gt;%</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">party =</span> <span class="fu">if_else</span>(diff <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="st">"D"</span>, <span class="st">"R"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(., <span class="fu">aes</span>(<span class="at">y =</span> <span class="fu">reorder</span>(feature, diff), <span class="at">x =</span> diff, <span class="at">color =</span> party)) <span class="sc">+</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"red"</span>)) <span class="sc">+</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Difference in cosine similarity"</span>, <span class="at">y =</span> <span class="st">"Word"</span>, <span class="at">color =</span> <span class="st">"Party"</span>) <span class="sc">+</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlim</span>(<span class="fu">c</span>(<span class="sc">-</span><span class="fl">0.4</span>, <span class="fl">0.4</span>)) <span class="sc">+</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>References</strong></p>
-<ul>
-<li><p>Hajnal, Z., &amp; Rivera, M. (2014). Immigration, Latinos, and White Partisan Politics: The New Democratic Defection. American Journal of Political Science, 58(4), 973-989.</p></li>
-<li><p>Peri, G. (2016). Immigrants, Productivity, and Labor Markets. Journal of Economic Perspectives, 30(4), 3-30.</p></li>
-<li><p>Wong, T. K. (2017). The Politics of Immigration: Partisanship, Demographic Change, and American National Identity. Oxford University Press.</p></li>
-<li><p>Zolberg, A. R. (2006). A Nation by Design: Immigration Policy in the Fashioning of America. Harvard University Press.</p></li>
-</ul>
 
 
 
-</section>
-</section>
-</section>
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-
+<div class="quarto-post image-right" data-index="0" data-categories="Natural Language Processing" data-listing-date-sort="1725940800000" data-listing-file-modified-sort="1726382636114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="509">
+<div class="thumbnail">
+<p><a href="./project/text_analysis/index.html" class="no-external"></a></p><a href="./project/text_analysis/index.html" class="no-external">
+<p class="card-img-top"><img src="project/text_analysis/immigrant.png" style="height: 10em;"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./project/text_analysis/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./project/text_analysis/index.html" class="no-external">NLP: Partisan Framing of Immigration in U.S. Presidential Speeches</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./project/text_analysis/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Natural Language Processing'); return false;">
+Natural Language Processing
+</div>
+</div>
+<div class="listing-description">
+<a href="./project/text_analysis/index.html" class="no-external"><strong>Methods Used</strong>: Structural Topic Modeling (STM), Word Embeddings, Cosine Similarity, <code>quanteda</code></a>
+</div>
+</div>
+<div class="metadata">
+<a href="./project/text_analysis/index.html" class="no-external">
+<div class="listing-date">
+Sep 10, 2024
+</div>
+<div class="listing-author">
+Ray Sun
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Statistics" data-listing-date-sort="1715486400000" data-listing-file-modified-sort="1726382844304" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1230">
+<div class="thumbnail">
+<p><a href="./project/multilevel/index.html" class="no-external"></a></p><a href="./project/multilevel/index.html" class="no-external">
+<p class="card-img-top"><img src="project/multilevel/Figure1.png" style="height: 10em;"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./project/multilevel/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./project/multilevel/index.html" class="no-external">Multilevel Mixed-Effects Models: Modeling the Determinants of China’s Official Financing in Southeast Asia</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./project/multilevel/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Statistics'); return false;">
+Statistics
+</div>
+</div>
+<div class="listing-description">
+<a href="./project/multilevel/index.html" class="no-external">This project examines the factors influencing China’s Official Financing (COF) allocations to Southeast Asian countries, focusing on three key dimensions: economic…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./project/multilevel/index.html" class="no-external">
+<div class="listing-date">
+May 12, 2024
+</div>
+<div class="listing-author">
+Ray Sun
+</div>
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items

@@ -1,0 +1,83 @@
+---
+title: "NLP: Partisan Framing of Immigration in U.S. Presidential Speeches"
+author: "Ray Sun"
+date: "2024-09-10"
+categories:
+  - Natural Language Processing
+tags:
+  - Structural Topic Model
+  - Word Embeddings
+  - Cosine Similarity
+format: html
+---
+
+
+# **Natural Language Processing (NLP): Partisan Framing of Immigration in U.S. Presidential Speeches**
+
+**Methods Used**: Structural Topic Modeling (STM), Word Embeddings, Cosine Similarity, `quanteda`
+
+This project analyzes U.S. presidential speeches from 1789 to 2023, comparing how Democratic and Republican presidents frame immigration. Using **STM** and **word embeddings**, the study uncovers significant rhetorical differences between the two parties, highlighting contrasting priorities in the political discourse on immigration.
+
+## Key Findings
+
+- **Republican Presidents**: Words such as "border", "enforcement", "patrol", and "aliens" suggest a focus on **security** and **law enforcement**.
+
+- **Democratic Presidents**: Words like "spending", "taxes", and "economic" indicate a framing of immigration around **economic** issues.
+
+## Partisan Framing of Immigration
+![Cosine Similarity Plot](immigrant.png)
+
+The Republican Party’s discourse reflects the party’s traditional stance of prioritizing border security and strict immigration controls, often positioning immigration as a threat to national security (Hajnal & Rivera, 2014). The use of terms like "border" and "enforcement" aligns with Republican policies that emphasize the construction of physical barriers, increased immigration law enforcement, and tighter restrictions on immigration, particularly from Mexico and Central America (Zolberg, 2006).
+
+On the other hand, the Democratic Party’s rhetoric links immigration to issues of public finance and economic policy. Democrats often emphasize the economic benefits of immigration, highlighting the positive contributions of immigrants to the labor market and the economy at large (Peri, 2016). This reflects the party’s more inclusive stance, advocating for comprehensive immigration reform that includes pathways to citizenship for undocumented immigrants and the protection of immigrant rights (Wong, 2017).
+
+---
+
+## Steps and R Codes
+
+### Data Preprocessing
+The speeches were cleaned and tokenized using `quanteda`, removing punctuation, stopwords, and short words.
+
+```r
+toks <- tokens(pres_df_stm$clean_text, remove_punct = TRUE, remove_symbols = TRUE)
+toks_nostop <- tokens_select(toks, pattern = stopwords("en"), selection = "remove", min_nchar = 3)
+```
+### Constructing the Structural Topic Modeling
+An STM model was used to discover the key topics within the speeches, particularly focusing on their temporal evolution.
+
+```r
+pres_stm <- stm(docs, vocab, K = 0, prevalence = ~ s(date_clean), data = meta, init.type = "Spectral")
+pres_stm_effects <- estimateEffect(1:73 ~ s(date_clean), stmobj = pres_stm, metadata = meta, uncertainty = "None")
+```
+
+### Applying Word Embeddings
+To explore the context in which immigration-related terms were used, word embeddings were applied to analyze semantic differences between the two political parties.
+
+```r
+immig_toks <- tokens_context(x = toks, pattern = c("immigration", "immigrants"), window = 8L)
+immig_dfm <- dfm(immig_toks)
+```
+
+### Visualizing Partisan Differences
+The cosine similarity analysis revealed key words associated with each party’s framing of immigration. The plot below shows the most distinctive words for each party.
+
+```r
+five_perc_cos %>%
+  mutate(party = if_else(diff > 0, "D", "R")) %>%
+  ggplot(., aes(y = reorder(feature, diff), x = diff, color = party)) +
+  geom_point() +
+  scale_color_manual(values = c("blue", "red")) +
+  labs(x = "Difference in cosine similarity", y = "Word", color = "Party") +
+  xlim(c(-0.4, 0.4)) +
+  theme_minimal()
+```
+
+**References**
+
+- Hajnal, Z., & Rivera, M. (2014). Immigration, Latinos, and White Partisan Politics: The New Democratic Defection. American Journal of Political Science, 58(4), 973-989.
+
+- Peri, G. (2016). Immigrants, Productivity, and Labor Markets. Journal of Economic Perspectives, 30(4), 3-30.
+
+- Wong, T. K. (2017). The Politics of Immigration: Partisanship, Demographic Change, and American National Identity. Oxford University Press.
+
+- Zolberg, A. R. (2006). A Nation by Design: Immigration Policy in the Fashioning of America. Harvard University Press.
